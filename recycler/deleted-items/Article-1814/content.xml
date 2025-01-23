@@ -1,0 +1,40 @@
+<recyclerItem>
+  <pageItems>
+    <pageItem name="" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="867b2907-d5f3-425a-a7f8-5705b72e21b0" rssFlag="False" styleName="buttonv12" editorType="None" orderPosition="3" itemTemplateName="standard">
+      <excerpt>Kontakt</excerpt>
+      <value name="align">left</value>
+      <value name="borderRadius">-1</value>
+      <value name="borderWidthInactive">-1</value>
+      <value name="fontweight-inactive">default</value>
+      <value name="borderWidthActive">-1</value>
+      <value name="fontweight-hover">default</value>
+      <value name="text">Kontakt</value>
+      <value name="url">oid://image/kontakt-6</value>
+      <value name="url_target" />
+      <value name="url_nofollow">False</value>
+      <value name="bgcolor-inactive" />
+      <value name="textcolor-inactive" />
+      <value name="bordercolor-inactive" />
+      <value name="bgcolor-hover" />
+      <value name="textcolor-hover" />
+      <value name="bordercolor-hover" />
+      <dynamicSettings>
+        <value name="name-align" />
+        <value name="name-color" />
+        <value name="name-level">h2</value>
+      </dynamicSettings>
+    </pageItem>
+  </pageItems>
+  <assets />
+  <imageAssets>
+    <image name="kontakt-6-" categoryID="50" categoryName="automatisch-erstellt" visualOutputFileName-contentCopy="kontakt-6-.jpg" visualOutputFileName-workingCopy="kontakt-6-large.jpg" objectID="kontakt-6" orderPosition="15" type="Image" uiCategoryName="Allgemein" folderPath-original="" fileName-original="bb1921ac00e84e418b4d378fca839801.jpg" folderPath-workingCopy="" fileName-workingCopy="5ea14592422b43f58adc8be11bf7af1b.jpg">
+      <description />
+      <dynamicSettings>
+        <value name="Compression">Lossless</value>
+      </dynamicSettings>
+    </image>
+  </imageAssets>
+  <imageAssetCategories>
+    <imageCategory name="automatisch-erstellt" type="Image" uiName="Automatisch erstellt" objectID="50" />
+  </imageAssetCategories>
+</recyclerItem>

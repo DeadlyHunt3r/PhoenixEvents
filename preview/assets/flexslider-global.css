@@ -1,0 +1,398 @@
+﻿/*
+ * jQuery FlexSlider v2.0 (global singleHeader Widget)
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+/* Browser Resets */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L18 */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  outline: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L22 */
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L25 */
+.flex-direction-nav li {
+  display: inline-block;
+  /* avoid visible whitespace in FF */
+
+}
+/* FlexSlider Necessary Styles
+*********************************/
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L29 */
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L30 */
+.flexslider .slides > li {
+  -webkit-backface-visibility: hidden;
+  list-style-type: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L31 */
+.flexslider .slides > li:not(:first-child) {
+  display: none;
+}
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L32 */
+.flexslider .slides li > img,
+.flexslider .slides li > a,
+.flexslider .slides li > a img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -moz-user-select: none;
+}
+/* -moz-user-select works around a firefox bug: https://community.zeta-producer.com/Thread/8066-Slider-Bilder-werden-blau-eingef%C3%A4rbt-beim-anklicken/?postID=43579#post43579 */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L33 */
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+/* Clearfix for the .slides element */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L36 */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L37 */
+html[xmlns] .slides {
+  display: block;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L38 */
+* html .slides {
+  height: 1%;
+}
+/* No JavaScript Fallback */
+
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L43 */
+.no-js .flexslider .slides > li {
+  display: block;
+}
+/* FlexSlider Default Theme
+*********************************/
+
+/*.flexslider {margin: 0 0 60px; background: #fff; border: 4px solid #fff; position: relative; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; box-shadow: 0 1px 4px rgba(0,0,0,.2); -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); -o-box-shadow: 0 1px 4px rgba(0,0,0,.2); zoom: 1;}*/
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L49 */
+.flexslider {
+  position: relative;
+  zoom: 1;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L51 */
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L52 */
+.loading .flex-viewport {
+  max-height: 300px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L53 */
+.flexslider .slides {
+  zoom: 1;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L55 */
+.carousel li {
+  margin-right: 5px;
+}
+/* fade in when initialized and Aspect Ratio based on layout-settings */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L58 */
+.flexslider {
+  aspect-ratio: 2050 / 1000;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L66 */
+.flexslider.inited {
+  opacity: 1;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L70 */
+.flexslider .slides > li:not(.first) {
+  display: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L73 */
+.no-js .flexslider {
+  opacity: 1;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L77 */
+.flexslider .flex-container {
+  max-height: 100%;
+}
+/* Direction Nav */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L84 */
+.flex-direction-nav {
+  height: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L86 */
+.flex-direction-nav a {
+  width: 30px;
+  height: 32px;
+  margin: -16px 0 0;
+  display: block;
+  background: url(images/bg_direction_nav.png) no-repeat 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+  text-indent: -9999px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L101 */
+.flex-direction-nav .flex-next,
+.flex-direction-nav .next {
+  right: -36px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L102 */
+.flex-direction-nav .flex-prev,
+.flex-direction-nav .prev {
+  left: -36px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L105 */
+.edge .touch .flexslider:hover .flex-next,
+.edge .touch .flexslider:hover .next,
+.flexslider:hover .flex-next,
+.flexslider:focus-within .flex-next,
+.flexslider:hover .next,
+.flexslider:focus-within .next {
+  opacity: 0.8;
+  right: 15px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L114 */
+.edge .touch .flexslider:hover .flex-prev,
+.edge .touch .flexslider:hover .prev,
+.flexslider:hover .flex-prev,
+.flexslider:focus-within .flex-prev,
+.flexslider:hover .prev,
+.flexslider:focus-within .prev {
+  opacity: 0.8;
+  left: 15px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L124 */
+.flexslider:hover .flex-next:hover,
+.flexslider:focus-within .flex-next,
+.flexslider:hover .next:hover,
+.flexslider:focus-within .next,
+.flexslider:hover .flex-prev:hover,
+.flexslider:focus-within .flex-prev,
+.flexslider:hover .prev:hover,
+.flexslider:focus-within .prev {
+  opacity: 1;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L134 */
+.flex-direction-nav .flex-disabled {
+  opacity: 0 !important;
+  filter: alpha(opacity=0);
+  cursor: default;
+  z-index: -1;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L141 */
+.flex-direction-nav a:not(.moespecifity),
+.flex-direction-nav li a:not(.moespecifity) {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+  text-indent: -9999px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  color: #fafafa !important;
+  background: none !important;
+  border: 0;
+  width: 30px;
+  height: 40px;
+  margin: -16px 0 0;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: 1px 0px 0 #000000 !important;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L165 */
+.flex-direction-nav a:not(.moespecifity):hover,
+.flex-direction-nav li a:not(.moespecifity):hover,
+.flex-direction-nav a:not(.moespecifity):focus-within,
+.flex-direction-nav li a:not(.moespecifity):focus-within {
+  color: inherit;
+  opacity: 0.7;
+  text-decoration: none;
+  border: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L172 */
+.flex-direction-nav a:not(.moespecifity):before,
+.flex-direction-nav li a:not(.moespecifity):before {
+  transform: translateY(-50%);
+  content: "\f104";
+  font-family: FontAwesome;
+  font-size: calc(2.6vw + 2rem);
+  font-size: min(calc(2.6vw + 2rem), 72px);
+  font-weight: normal;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  text-indent: 0;
+  text-align: center;
+  border: 0;
+  text-decoration: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L189 */
+.flex-direction-nav a:not(.moespecifity):focus-visible::before,
+.flex-direction-nav li a:not(.moespecifity):focus-visible::before {
+  outline: 3px solid #9b9b9e;
+  outline-offset: 5px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L194 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L195 */
+.flex-direction-nav a:not(.moespecifity).flex-next:before,
+.flex-direction-nav li a:not(.moespecifity).flex-next:before,
+.flex-direction-nav a:not(.moespecifity).next:before,
+.flex-direction-nav li a:not(.moespecifity).next:before {
+  content: "\f105";
+  left: auto;
+  right: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L201 */
+.flex-direction-nav a:not(.moespecifity).flex-prev,
+.flex-direction-nav li a:not(.moespecifity).flex-prev,
+.flex-direction-nav a:not(.moespecifity).prev,
+.flex-direction-nav li a:not(.moespecifity).prev {
+  text-shadow: -1px 0px 0 #000000;
+}
+/* Control Nav */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L208 */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L209 */
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L210 */
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L211 */
+.flex-control-paging li a:hover,
+.flex-control-paging li a:focus-within {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L213 */
+.flex-control-paging li a:focus-within {
+  outline: 3px solid #9b9b9e;
+  outline-offset: 5px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L217 */
+.flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L219 */
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L220 */
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L221 */
+.flex-control-thumbs img {
+  width: 100%;
+  display: block;
+  opacity: 0.7;
+  cursor: pointer;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L222 */
+.flex-control-thumbs img:hover,
+.flex-control-thumbs img:focus-within {
+  opacity: 1;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L224 */
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+@media screen and (max-width: 860px) {
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L228 */
+  .flex-direction-nav .flex-prev,
+  .flex-direction-nav .prev,
+  .flexslider:hover .flex-direction-nav .flex-prev,
+  .flexslider:focus-within .flex-direction-nav .flex-prev,
+  .flexslider:hover .flex-direction-nav .prev,
+  .flexslider:focus-within .flex-direction-nav .prev {
+    opacity: 1;
+    left: 5px;
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L235 */
+  .flex-direction-nav .flex-next,
+  .flex-direction-nav .next,
+  .flexslider:hover .flex-direction-nav .flex-next,
+  .flexslider:focus-within .flex-direction-nav .flex-next,
+  .flexslider:hover .flex-direction-nav .next,
+  .flexslider:focus-within .flex-direction-nav .next {
+    opacity: 1;
+    right: 5px;
+  }
+}
+@media print {
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\singleheader\assets\flexslider-global.less:L247 */
+  .flex-control-nav,
+  .flex-direction-nav {
+    display: none !important;
+  }
+}

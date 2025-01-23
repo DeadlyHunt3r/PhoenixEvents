@@ -1,0 +1,45 @@
+<recyclerItem>
+  <containers>
+    <container orderPosition="2" areaName="Standard">
+      <paragraph orderPosition="0" areaName="Standard">
+        <value name="column-count">1</value>
+        <value name="column-width-1">100</value>
+        <value name="column-width-unit-1">%</value>
+        <column orderPosition="0" areaName="Standard">
+          <value name="width">100</value>
+          <value name="width-unit">%</value>
+          <pageItem name="Test" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="41cf10f7-d1cc-4f73-9d3c-b6129c786499" rssFlag="False" styleName="linkbox" editorType="None" orderPosition="2" itemTemplateName="standard">
+            <excerpt />
+            <value name="minHeight">0</value>
+            <value name="padding">25</value>
+            <value name="textPadding">0</value>
+            <value name="borderRadius">0</value>
+            <value name="position">top</value>
+            <value name="backgroundColor">rgba(255, 255, 255, 0.1)</value>
+            <value name="borderColor">rgba(0, 0, 0, 0.1)</value>
+            <value name="shadowColor">rgba(0, 0, 0, 0.1)</value>
+            <value name="backgroundColorHover">rgba(255, 255, 255, 0.2)</value>
+            <value name="borderColorHover">rgba(0, 0, 0, 0.2)</value>
+            <value name="shadowColorHover">rgba(0, 0, 0, 0.2)</value>
+            <value name="text" />
+            <value name="image" />
+            <value name="url" />
+            <value name="url_target" />
+            <value name="url_nofollow">False</value>
+            <value name="headingColor" />
+            <value name="textColor" />
+            <value name="linksColor" />
+            <value name="headingColorHover" />
+            <value name="textColorHover" />
+            <value name="linksColorHover" />
+            <dynamicSettings>
+              <value name="name-align" />
+              <value name="name-color" />
+              <value name="name-level">h2</value>
+            </dynamicSettings>
+          </pageItem>
+        </column>
+      </paragraph>
+    </container>
+  </containers>
+</recyclerItem>

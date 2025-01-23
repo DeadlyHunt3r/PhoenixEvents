@@ -1,0 +1,17 @@
+<recyclerItem>
+  <pageItems>
+    <pageItem name="AAAAAAA" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="8001fb3b-7e5e-4053-82ea-24289804e667" rssFlag="False" styleName="hint" editorType="None" orderPosition="1" itemTemplateName="standard">
+      <excerpt>asdas</excerpt>
+      <value name="textcolor">#0D1D2B</value>
+      <value name="background">#EFF2F4</value>
+      <value name="border">#D0D7DD</value>
+      <value name="Text">&lt;p&gt;asdas&lt;/p&gt;</value>
+      <value name="inlinestyle" />
+      <dynamicSettings>
+        <value name="name-align" />
+        <value name="name-color" />
+        <value name="name-level">h2</value>
+      </dynamicSettings>
+    </pageItem>
+  </pageItems>
+</recyclerItem>

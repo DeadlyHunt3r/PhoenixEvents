@@ -1,0 +1,13 @@
+<recyclerItem>
+  <pageItems>
+    <pageItem name="" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="5ff3bd56-7a4d-4e80-a599-d36225d49cb2" rssFlag="False" styleName="text" editorType="None" orderPosition="2" itemTemplateName="standard">
+      <excerpt />
+      <value name="Text" />
+      <dynamicSettings>
+        <value name="name-align" />
+        <value name="name-color" />
+        <value name="name-level">h2</value>
+      </dynamicSettings>
+    </pageItem>
+  </pageItems>
+</recyclerItem>

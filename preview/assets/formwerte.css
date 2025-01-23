@@ -1,0 +1,16 @@
+table.zpformdata tr{
+	vertical-align: top;
+}
+table.zpformdata th,
+table.zpformdata td{
+	padding-right: 8px;
+	padding-bottom: 8px;
+	vertical-align: top;
+}
+
+table.zpformdata .left{
+	text-align: right;
+}
+table.zpformdata .right{
+	text-align: left;
+}

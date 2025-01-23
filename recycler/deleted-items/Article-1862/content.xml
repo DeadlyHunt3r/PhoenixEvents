@@ -1,0 +1,13 @@
+<recyclerItem>
+  <pageItems>
+    <pageItem name="HJilfe" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="5ac7dc67-f332-419a-ad8e-51014e7ab537" rssFlag="False" styleName="text" editorType="None" orderPosition="0" itemTemplateName="standard">
+      <excerpt>asdasdasdasdaadasdasdas</excerpt>
+      <value name="Text">&lt;p&gt;asdasdasdasdaa&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;d&lt;/p&gt;&lt;p&gt;asd&lt;/p&gt;&lt;p&gt;asd&lt;/p&gt;&lt;p&gt;as&lt;/p&gt;</value>
+      <dynamicSettings>
+        <value name="name-align" />
+        <value name="name-color" />
+        <value name="name-level">h2</value>
+      </dynamicSettings>
+    </pageItem>
+  </pageItems>
+</recyclerItem>

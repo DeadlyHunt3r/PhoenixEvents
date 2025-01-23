@@ -1,0 +1,40 @@
+<recyclerItem>
+  <page activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" dontCachePageItems="False" expirationDate="01/01/0001 00:00:00" fileName="test-kontakt" fileType="" folderName="" id="619" parentID="603" isActive="True" language2="de" metaKeywords="" name="Test Kontakt" objectID="de$test-kontakt" sitemapFlag="False" targetNoFollow="False" targetUrl="" targetTarget="" templateFile="" title="" type="Page" orderPosition="4" isVisible="True" hideInTree="False" rootFolderName="/" projectFolderLanguage2="de">
+    <description />
+    <container orderPosition="0" areaName="Standard">
+      <paragraph orderPosition="0" areaName="Standard">
+        <value name="column-count">1</value>
+        <value name="column-width-1">100</value>
+        <value name="column-width-unit-1">%</value>
+        <column orderPosition="0" areaName="Standard">
+          <value name="width">100</value>
+          <value name="width-unit">%</value>
+          <pageItem name="" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="59c302fa-98cb-4d23-8568-dc9470b0f114" rssFlag="False" styleName="text" editorType="None" orderPosition="0" itemTemplateName="standard">
+            <excerpt>Test</excerpt>
+            <value name="Text">&lt;p&gt;Test&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</value>
+            <dynamicSettings>
+              <value name="name-align" />
+              <value name="name-color" />
+              <value name="name-level">h2</value>
+            </dynamicSettings>
+          </pageItem>
+          <pageItem name="Test Kontakt" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="52863eca-91d5-44de-8208-89b9f248fbaa" rssFlag="False" styleName="text" editorType="None" orderPosition="1" itemTemplateName="standard">
+            <excerpt />
+          </pageItem>
+          <pageItem name="" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="4251545d-d535-46b7-a572-19b13d36f7ea" rssFlag="False" styleName="teaserv12" editorType="None" orderPosition="2" itemTemplateName="standard">
+            <excerpt>Hallo</excerpt>
+            <value name="teasertext">&lt;p&gt;Hallo&lt;/p&gt;</value>
+            <value name="text">&lt;p&gt;WIe geht es dir mein Bester&lt;/p&gt;</value>
+            <value name="teaserlink">Mehr…</value>
+            <value name="hidelink">Weniger…</value>
+            <dynamicSettings>
+              <value name="name-align" />
+              <value name="name-color" />
+              <value name="name-level">h2</value>
+            </dynamicSettings>
+          </pageItem>
+        </column>
+      </paragraph>
+    </container>
+  </page>
+</recyclerItem>

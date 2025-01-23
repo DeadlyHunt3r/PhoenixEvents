@@ -1,0 +1,36 @@
+<recyclerItem>
+  <pageItems>
+    <pageItem name="" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="c737edff-8467-415d-a28d-2742006b05a5" rssFlag="False" styleName="singleimage" editorType="SingleImage" orderPosition="0" itemTemplateName="standard" wasCopiedFromArticleObjectID="c737edff-8467-415d-a28d-2742006b05a5">
+      <excerpt>Bild forensik-2.png</excerpt>
+      <value name="excerpt">Bild forensik-2.png</value>
+      <value name="clicknofollow">True</value>
+      <value name="image">oid://image/forensik-2</value>
+      <value name="clickurl">oid://page/de$unterseite-1</value>
+      <value name="clicktarget" />
+      <value name="lightbox">url</value>
+      <value name="effect">none</value>
+      <dynamicSettings>
+        <value name="groupid">635938941692158966</value>
+      </dynamicSettings>
+    </pageItem>
+  </pageItems>
+  <assets />
+  <imageAssets>
+    <image name="forensik-2" categoryID="50" categoryName="automatisch-erstellt" visualOutputFileName-contentCopy="forensik-2.png" visualOutputFileName-workingCopy="forensik-2-large.png" objectID="forensik-2" orderPosition="15" type="Image" uiCategoryName="Allgemein" folderPath-original="" fileName-original="3958d4e6fe424817872dcd976270d226.png" folderPath-workingCopy="" fileName-workingCopy="a6edb525f90f47a3899d179c543abf28.png">
+      <description />
+      <dynamicSettings>
+        <value name="Compression">Lossless</value>
+        <value name="Description-de" />
+        <value name="AltText-de" />
+        <value name="AltText" />
+        <value name="ThumbnailImageFileNames.Count">1</value>
+        <value name="ThumbnailImageFileNames.Filename0">media\images\forensik-2.png</value>
+        <value name="prevUsedMaxContentCopyWidth-Output">449</value>
+        <value name="prevUsedMaxContentCopyWidthRefID-Output">1765</value>
+      </dynamicSettings>
+    </image>
+  </imageAssets>
+  <imageAssetCategories>
+    <imageCategory name="automatisch-erstellt" type="Image" uiName="Automatisch erstellt" objectID="50" />
+  </imageAssetCategories>
+</recyclerItem>

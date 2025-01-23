@@ -1,0 +1,44 @@
+<recyclerItem>
+  <containers>
+    <container orderPosition="1" areaName="Header">
+      <paragraph orderPosition="0" areaName="Header">
+        <value name="column-count">1</value>
+        <value name="column-width-1">100</value>
+        <value name="column-width-unit-1">%</value>
+        <column orderPosition="0" areaName="Header">
+          <value name="width">100</value>
+          <value name="width-unit">%</value>
+          <pageItem name="" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Header" isActive="True" objectID="3338dc96-96af-4c12-8819-0bf7dece7e42" rssFlag="False" styleName="singleheader" editorType="SlidingPageHeader" orderPosition="1" itemTemplateName="standard" wasCopiedFromArticleObjectID="3338dc96-96af-4c12-8819-0bf7dece7e42">
+            <excerpt>Ein Element</excerpt>
+            <value name="duration">7000</value>
+            <value name="effect">slide</value>
+            <value name="autoplay">True</value>
+            <value name="header-count">1</value>
+            <value name="header-image-1">oid://image/v-net-hintergrund1223</value>
+            <value name="header-title-1" />
+            <value name="header-title-align-1" />
+            <value name="header-title-level-1" />
+            <value name="header-title-color-1" />
+            <value name="header-description-1" />
+            <value name="header-image-clickurl-1" />
+            <value name="header-image-clickurl-1_target" />
+            <value name="header-image-clickurl-1_nofollow">False</value>
+            <value name="excerpt">Ein Element</value>
+          </pageItem>
+        </column>
+      </paragraph>
+    </container>
+  </containers>
+  <assets />
+  <imageAssets>
+    <image name="v-net-hintergrund1223" categoryID="50" categoryName="automatisch-erstellt" visualOutputFileName-contentCopy="v-net-hintergrund1223.png" visualOutputFileName-workingCopy="v-net-hintergrund1223-large.png" objectID="v-net-hintergrund1223" orderPosition="11" type="Image" uiCategoryName="Allgemein" folderPath-original="" fileName-original="69e4c6870beb4b49bea95ab9cc34e563.jpg" folderPath-workingCopy="" fileName-workingCopy="45c32ae65470400e9c0c73ed05f52737.png">
+      <description />
+      <dynamicSettings>
+        <value name="Compression">Lossless</value>
+      </dynamicSettings>
+    </image>
+  </imageAssets>
+  <imageAssetCategories>
+    <imageCategory name="automatisch-erstellt" type="Image" uiName="Automatisch erstellt" objectID="50" />
+  </imageAssetCategories>
+</recyclerItem>
