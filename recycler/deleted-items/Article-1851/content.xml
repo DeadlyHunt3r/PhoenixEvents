@@ -1,7 +1,0 @@
-<recyclerItem>
-  <pageItems>
-    <pageItem name="Sudoku" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="37127145-90b5-4709-8164-29e21ca53eb7" rssFlag="False" styleName="text" editorType="None" orderPosition="1" itemTemplateName="standard">
-      <excerpt />
-    </pageItem>
-  </pageItems>
-</recyclerItem>

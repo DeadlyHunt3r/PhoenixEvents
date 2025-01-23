@@ -1,9 +1,0 @@
-{
-  "require": {
-    "katzgrau/klogger": "^1.2",
-    "guzzlehttp/guzzle": "^6.3",
-    "studio24/rotate": "^1.0",
-    "phpmailer/phpmailer": "^6.0",
-    "ext-openssl": "*"
-  }
-}

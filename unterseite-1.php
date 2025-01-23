@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html prefix="og: https://ogp.me/ns#" class="zppreview no-js responsivelayout supportsbreakout" lang="de" data-zpdebug="false" data-ptr="" data-pagename="Kontakt">
+<html prefix="og: https://ogp.me/ns#" class="zppreview no-js responsivelayout supportsbreakout" lang="de" data-zpdebug="false" data-ptr="" data-pagename="Unser Angebot">
 <head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,14 +7,14 @@
 	<meta name="keywords" content="" />
 	<meta name="generator" content="Zeta Producer 16.8.6.0, ZP16F, 04.06.2024 11:28:10" />
 	<meta name="robots" content="index, follow" />
-	<title>Kontakt</title>
+	<title>Unser Angebot</title>
 	
 <meta property="og:type" content="website">
-<meta property="og:title" content="Kontakt">
+<meta property="og:title" content="Unser Angebot">
 <meta property="og:description" content="">
-<meta property="og:url" content="https://hosting.zeta-producer.com/7920001663/kontakt.html?page-id=609">
+<meta property="og:url" content="https://hosting.zeta-producer.com/7920001663/unterseite-1.php?page-id=605">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="Kontakt">
+<meta property="twitter:title" content="Unser Angebot">
 <meta property="twitter:description" content="">
 
 	<script>
@@ -45,7 +45,7 @@
 <script src="assets/js/what-input.min.js?v=638730541875740087"></script>
 	
 
-	<link rel="canonical" href="https://hosting.zeta-producer.com/7920001663/kontakt.html?page-id=609" />
+	<link rel="canonical" href="https://hosting.zeta-producer.com/7920001663/unterseite-1.php?page-id=605" />
 
 	<link rel="preload" href="assets/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin />
 
@@ -81,7 +81,7 @@
 		WebFontConfig = {
 			custom: { 
 				families: [ 'Comfortaa:400,700', 'Roboto:300,400,700' ], 
-				urls: ['media/fonts/zp-webfonts.css?v=1315379678']
+				urls: ['media/fonts/zp-webfonts.css?v=319096445']
 			}
 		};
 	</script>
@@ -99,14 +99,14 @@
 	
 	
 	<style>
-.zpSidebarIcons1824 {right: -80px;top: 50%;transform: translateY(-50%);}#zpSidebarIcons1824.zpSidebarIcons1824 a {right: 0;flex-direction: row;border-radius: 3px 0 0 3px !important;height: 45px;margin-bottom: 1px !important;color: #FFFFFF !important;background-color: #0082D7 !important;border-width: 1px !important;border-color: #0082D7 !important;box-shadow: 0 0 3px rgba(0, 0, 0, 0.1) !important;}@media (hover: hover) {#zpSidebarIcons1824.zpSidebarIcons1824 a:hover {right: 80px;}}#zpSidebarIcons1824.zpSidebarIcons1824 a:hover {color: #FFFFFF !important;background-color: #0076C4 !important;border-color: #0076C4 !important;box-shadow: 0 0 3px rgba(0, 0, 0, 0.2) !important;}.zpSidebarIcons1824 a span.zpSidebarIcon {width: 45px;font-size: 1em;}.zpSidebarIcons1824 a span.zpSidebarText {justify-content: flex-start;font-size: 0.8em;width: 80px;}@media (max-width: 479px) {.zpSidebarIcons1824 a span.zpSidebarIcon {width: 23px;font-size: 0.8em;}.zpSidebarIcons1824 a span.zpSidebarText {font-size: 0.8em;}}
+.zpSidebarIcons1820 {right: -80px;top: 50%;transform: translateY(-50%);}#zpSidebarIcons1820.zpSidebarIcons1820 a {right: 0;flex-direction: row;border-radius: 3px 0 0 3px !important;height: 45px;margin-bottom: 1px !important;color: #FFFFFF !important;background-color: #0082D7 !important;border-width: 1px !important;border-color: #0082D7 !important;box-shadow: 0 0 3px rgba(0, 0, 0, 0.1) !important;}@media (hover: hover) {#zpSidebarIcons1820.zpSidebarIcons1820 a:hover {right: 80px;}}#zpSidebarIcons1820.zpSidebarIcons1820 a:hover {color: #FFFFFF !important;background-color: #0076C4 !important;border-color: #0076C4 !important;box-shadow: 0 0 3px rgba(0, 0, 0, 0.2) !important;}.zpSidebarIcons1820 a span.zpSidebarIcon {width: 45px;font-size: 1em;}.zpSidebarIcons1820 a span.zpSidebarText {justify-content: flex-start;font-size: 0.8em;width: 80px;}@media (max-width: 479px) {.zpSidebarIcons1820 a span.zpSidebarIcon {width: 23px;font-size: 0.8em;}.zpSidebarIcons1820 a span.zpSidebarText {font-size: 0.8em;}}
 </style>
 	
 	<!-- Search Inline Script -->
 	
 </head>
 
-<body data-pageid="609" id="flat-responsive" class="notouch hasfixednav">
+<body data-pageid="605" id="flat-responsive" class="notouch hasfixednav">
 	
 	<a href="#zpMainContent" class="zp-skiplink">Zum Hauptinhalt springen</a>
 	<a id="top"></a>
@@ -135,37 +135,37 @@
 				
 			
 
-<div id="zpMainContent" class="zparea zpgrid" data-numcolumns="" data-areaname="Standard" data-pageid="609" data-showemptyarticleareas="false">
+<div id="zpMainContent" class="zparea zpgrid" data-numcolumns="" data-areaname="Standard" data-pageid="605" data-showemptyarticleareas="false">
 	
 			
 			
 
 
 		
-	<div id="container_61" class="zpContainer first last  " 
+	<div id="container_59" class="zpContainer first last zpBreakout  " 
 		
 		  data-type="inline-editing" 
 		  data-context="container" 
 		  data-area-name="Standard" 
-		  data-container-id="61" 
-		  data-item-id="61" 
+		  data-container-id="59" 
+		  data-item-id="59" 
 		  data-undoclass="" 
 		  data-undostyle="" 
 		  data-item-symlinktarget="false" 
 		  data-item-symlink="false" 
 		  data-item-implicitsymlink="false" 
-		 data-zpeleel="container" data-zpleid="61">
+		 data-zpeleel="container" data-zpleid="59">
 	
 	
 
 			
-			<div class="zpRow standard  " data-row-id="423" 
+			<div class="zpRow standard  " data-row-id="422" 
 				
 				  data-type="inline-editing" 
 				  data-context="row" 
 				  data-area-name="Standard" 
-				  data-container-id="61" 
-				  data-item-id="423" 
+				  data-container-id="59" 
+				  data-item-id="422" 
 				  data-column-count="1" 
 				  data-column-count-max="0"
 				  data-undoclass="" 
@@ -177,16 +177,16 @@
 
 			
 				
-				<div class="zpColumn odd zpColumnWidth1 c12 first last" style="" data-column-id="480" 
+				<div class="zpColumn odd zpColumnWidth1 c12 first last" style="" data-column-id="479" 
 					
 					 data-type="inline-editing" 
 					 data-context="column" 
 					 data-area-name="Standard" 
-					 data-container-id="61" 
-					 data-row-id="423" 
-					 data-item-id="480" 
-					 data-column-id="480" 
-					 data-undoclass="" 
+					 data-container-id="59" 
+					 data-row-id="422" 
+					 data-item-id="479" 
+					 data-column-id="479" 
+					 data-undoclass="c12" 
 					 data-undostyle="" 
 					 data-item-symlinktarget="false" 
 					 data-item-symlink="false" 
@@ -194,18 +194,22 @@
 					>
 	
 					
+
+
+	
+		
 <div class="zpColumnItem" >
-	<div id="a1808" data-article-id="1808" data-zpleid="1808" 
- class="articlearea zpwText" 
+	<div id="a1805" data-article-id="1805" data-zpleid="1805" 
+ class="articlearea zpwBild popupimage" 
 	 
 	 data-type="inline-editing"
 	 data-context="article"
 	 data-area-name="Standard"
-	 data-item-id="1808"
+	 data-item-id="1805"
 	 data-item-state="active" 
 	 data-item-available="true" 
-	 data-row-id="423" 
-	 data-container-id="61" 
+	 data-row-id="422" 
+	 data-container-id="59" 
 	 data-item-symlinktarget="false" 
 	 data-item-symlink="false" 
 	 data-item-implicitsymlink="false" 
@@ -216,58 +220,270 @@
 	
 
 	
+			<div id="igal1805" class="zpImageGallery"
+			 data-kind="singleimage"
+			 data-titleShow="1"
+			 data-htmltitle=""
+			 data-width="auto"
+			 data-height="auto"
+			 data-bordercolor="default"
+			 data-borderwidth="0"
+			 data-margin="0"
+			 data-titleposition="outside"
+			 data-transition="elastic"
+			 data-slideshow="0">
+			
+				<a class="fancybox preloadimg zpnolayoutlinkstyles" href="media/images/v-net-hintergrund1223-large.jpg" title="" aria-label="Bild in Lightbox öffnen (open image in lightbox)">
+			
+				
+				<img loading="lazy" class="singleImage" src="media/images/v-net-hintergrund1223.jpg" width="2048" height="360" alt="" />
+				
+			</a>
+
+			
+			</div>
+		
+	</div>
+</div>
+
+	
+
+				</div>
 	
 			
 
-	<h2    
+			</div><!-- .zpRow -->
+		
+
+	
+
+			
+			<div class="zpRow standard  " data-row-id="417" 
+				
+				  data-type="inline-editing" 
+				  data-context="row" 
+				  data-area-name="Standard" 
+				  data-container-id="59" 
+				  data-item-id="417" 
+				  data-column-count="1" 
+				  data-column-count-max="0"
+				  data-undoclass="" 
+				  data-undostyle="" 
+				  data-item-symlinktarget="false" 
+				  data-item-symlink="false" 
+				  data-item-implicitsymlink="false" 
+				>
+
+			
+				
+				<div class="zpColumn odd zpColumnWidth1 c12 first last" style="" data-column-id="474" 
+					
+					 data-type="inline-editing" 
+					 data-context="column" 
+					 data-area-name="Standard" 
+					 data-container-id="59" 
+					 data-row-id="417" 
+					 data-item-id="474" 
+					 data-column-id="474" 
+					 data-undoclass="" 
+					 data-undostyle="" 
+					 data-item-symlinktarget="false" 
+					 data-item-symlink="false" 
+					 data-item-implicitsymlink="false" 
+					>
+	
+					
+<div class="zpColumnItem" >
+	<div id="a1798" data-article-id="1798" data-zpleid="1798" 
+ class="articlearea zpwFAQ" 
 	 
-	 id="headeditor1808" class="zpedit head empty" data-widgetname="text" 
-	 data-context="headline"
+	 data-type="inline-editing"
+	 data-context="article"
 	 data-area-name="Standard"
-	 data-field-name="zpName" 
-	 data-item-id="zh1808"
-	 data-article-id="1808"
-	 data-row-id="423"
+	 data-item-id="1798"
+	 data-item-state="active" 
+	 data-item-available="true" 
+	 data-row-id="417" 
+	 data-container-id="59" 
+	 data-item-symlinktarget="false" 
+	 data-item-symlink="false" 
+	 data-item-implicitsymlink="false" 
+	 data-item-symlink-target-id="0" 
+	 data-widgetname=""
 	
-	  data-zpfieldname="headline"></h2>
-   
-			
-
-
- 
-	 <div id="texteditor1808" class="zpedit text" data-widgetname="text" 
-	 data-field-name="text" 
-	 data-editor-type="normal" 
-	 data-area-name="Standard"
-	 data-item-id="zh1808"
-	 data-article-id="1808"
-	 data-row-id="423">
-	
-<p style="text-align: center;"></p><p style="text-align: center;"><span style="font-family: Comfortaa; font-size: 36px;">📧phoenix@mail.ls<br></span></p><p style="text-align: center;"><span style="font-family: Comfortaa; font-size: 36px;">📞 577 577</span></p>
- 
-	 </div>
+	>
 	
 
 	
+	<p id="1798" class="zpSO-faq-question">
+		<span></span><a href="#a1798" class="zpNoScroll">Escape Rooms</a>
+	</p>
+	<div id="zpSO-faq-answer1798" class="zpSO-faq-answer" style="display:none;padding-left:20px;padding-bottom:0.5em">
+		<ul><li><a href="unterseite-1-1.html?page-id=606">Tod im Schatten der Wahrheit</a></li></ul>
+	</div>
 
 	</div>
 </div>
 
 
+<div class="zpColumnItem" >
+	<div id="a1799" data-article-id="1799" data-zpleid="1799" 
+ class="articlearea zpwFAQ" 
+	 
+	 data-type="inline-editing"
+	 data-context="article"
+	 data-area-name="Standard"
+	 data-item-id="1799"
+	 data-item-state="active" 
+	 data-item-available="true" 
+	 data-row-id="417" 
+	 data-container-id="59" 
+	 data-item-symlinktarget="false" 
+	 data-item-symlink="false" 
+	 data-item-implicitsymlink="false" 
+	 data-item-symlink-target-id="0" 
+	 data-widgetname=""
+	
+	>
+	
+
+	
+	<p id="1799" class="zpSO-faq-question">
+		<span></span><a href="#a1799" class="zpNoScroll">Event - Planung</a>
+	</p>
+	<div id="zpSO-faq-answer1799" class="zpSO-faq-answer" style="display:none;padding-left:20px;padding-bottom:0.5em">
+		<ul><li><a href="mit-euch.html?page-id=627">mit euch</a></li><li><a href="von-uns.html?page-id=628">von uns</a></li></ul>
+	</div>
+
+	</div>
+</div>
 
 
 <div class="zpColumnItem" >
-	<div id="a1824" data-article-id="1824" data-zpleid="1824" 
+	<div id="a1800" data-article-id="1800" data-zpleid="1800" 
+ class="articlearea zpwFAQ" 
+	 
+	 data-type="inline-editing"
+	 data-context="article"
+	 data-area-name="Standard"
+	 data-item-id="1800"
+	 data-item-state="active" 
+	 data-item-available="true" 
+	 data-row-id="417" 
+	 data-container-id="59" 
+	 data-item-symlinktarget="false" 
+	 data-item-symlink="false" 
+	 data-item-implicitsymlink="false" 
+	 data-item-symlink-target-id="0" 
+	 data-widgetname=""
+	
+	>
+	
+
+	
+	<p id="1800" class="zpSO-faq-question">
+		<span></span><a href="#a1800" class="zpNoScroll">Aktuelle Events</a>
+	</p>
+	<div id="zpSO-faq-answer1800" class="zpSO-faq-answer" style="display:none;padding-left:20px;padding-bottom:0.5em">
+		<ul><li><br></li></ul>
+	</div>
+
+	</div>
+</div>
+
+
+<div class="zpColumnItem" >
+	<div id="a1801" data-article-id="1801" data-zpleid="1801" 
+ class="articlearea zpwFAQ" 
+	 
+	 data-type="inline-editing"
+	 data-context="article"
+	 data-area-name="Standard"
+	 data-item-id="1801"
+	 data-item-state="active" 
+	 data-item-available="true" 
+	 data-row-id="417" 
+	 data-container-id="59" 
+	 data-item-symlinktarget="false" 
+	 data-item-symlink="false" 
+	 data-item-implicitsymlink="false" 
+	 data-item-symlink-target-id="0" 
+	 data-widgetname=""
+	
+	>
+	
+
+	
+	<p id="1801" class="zpSO-faq-question">
+		<span></span><a href="#a1801" class="zpNoScroll">Racing</a>
+	</p>
+	<div id="zpSO-faq-answer1801" class="zpSO-faq-answer" style="display:none;padding-left:20px;padding-bottom:0.5em">
+		<ul><li>coming soon</li></ul>
+	</div>
+
+	</div>
+</div>
+
+
+				</div>
+	
+			
+
+			</div><!-- .zpRow -->
+		
+
+	
+
+			
+			<div class="zpRow standard  " data-row-id="428" 
+				
+				  data-type="inline-editing" 
+				  data-context="row" 
+				  data-area-name="Standard" 
+				  data-container-id="59" 
+				  data-item-id="428" 
+				  data-column-count="1" 
+				  data-column-count-max="0"
+				  data-undoclass="" 
+				  data-undostyle="" 
+				  data-item-symlinktarget="false" 
+				  data-item-symlink="false" 
+				  data-item-implicitsymlink="false" 
+				>
+
+			
+				
+				<div class="zpColumn odd zpColumnWidth1 c12 first last" style="" data-column-id="485" 
+					
+					 data-type="inline-editing" 
+					 data-context="column" 
+					 data-area-name="Standard" 
+					 data-container-id="59" 
+					 data-row-id="428" 
+					 data-item-id="485" 
+					 data-column-id="485" 
+					 data-undoclass="c12" 
+					 data-undostyle="" 
+					 data-item-symlinktarget="false" 
+					 data-item-symlink="false" 
+					 data-item-implicitsymlink="false" 
+					>
+	
+					
+
+
+<div class="zpColumnItem" >
+	<div id="a1820" data-article-id="1820" data-zpleid="1820" 
  class="articlearea zpwSidebar-Icons" 
 	 
 	 data-type="inline-editing"
 	 data-context="article"
 	 data-area-name="Standard"
-	 data-item-id="1824"
+	 data-item-id="1820"
 	 data-item-state="active" 
 	 data-item-available="true" 
-	 data-row-id="423" 
-	 data-container-id="61" 
+	 data-row-id="428" 
+	 data-container-id="59" 
 	 data-item-symlinktarget="false" 
 	 data-item-symlink="false" 
 	 data-item-implicitsymlink="false" 
@@ -296,7 +512,7 @@
 </div>
 
 
-<div id="zpSidebarIcons1824" class="zpSidebarIcons zpSidebarIcons1824">
+<div id="zpSidebarIcons1820" class="zpSidebarIcons zpSidebarIcons1820">
 
 	
 		<a class="zpnolayoutlinkstyles" href="index.html?page-id=604" title="Startseite">
@@ -322,8 +538,8 @@
 
 <script>
 	$z(document).ready(function(){
-		var zpSidebarIcons = document.getElementById('zpSidebarIcons1824');
-		$z(zpSidebarIcons).appendTo('body').addClass('zpInjectedContent').attr('data-item-id', '1824');
+		var zpSidebarIcons = document.getElementById('zpSidebarIcons1820');
+		$z(zpSidebarIcons).appendTo('body').addClass('zpInjectedContent').attr('data-item-id', '1820');
 	});
 </script>
 
