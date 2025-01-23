@@ -1,0 +1,25 @@
+<recyclerItem>
+  <pageItems>
+    <pageItem name="Test Event" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="1198a3dd-bb5f-46ce-b23d-23f8b54445dc" rssFlag="False" styleName="veranstaltung" editorType="None" orderPosition="1" itemTemplateName="veranstaltung">
+      <excerpt />
+      <value name="date_start">23.01.2025 00:00:00</value>
+      <value name="start">18:00</value>
+      <value name="date_end">23.01.2025 00:00:00</value>
+      <value name="end">20:00</value>
+      <value name="venue" />
+      <value name="venuelink" />
+      <value name="venuelink_target" />
+      <value name="venuelink_nofollow">False</value>
+      <value name="genre" />
+      <value name="image" />
+      <value name="caption" />
+      <value name="shortdescription" />
+      <value name="description" />
+      <dynamicSettings>
+        <value name="name-align" />
+        <value name="name-color" />
+        <value name="name-level">h2</value>
+      </dynamicSettings>
+    </pageItem>
+  </pageItems>
+</recyclerItem>

@@ -1,0 +1,16 @@
+<recyclerItem>
+  <pageItems>
+    <pageItem name="" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="2c7fab75-15db-4bd3-bcd3-6649befb37a8" rssFlag="False" styleName="quelltext-(html)" editorType="None" orderPosition="3" itemTemplateName="standard">
+      <excerpt>.navigation-menu { display: none; }</excerpt>
+      <value name="Text">.navigation-menu {
+    display: none;
+}
+</value>
+      <dynamicSettings>
+        <value name="name-align" />
+        <value name="name-color" />
+        <value name="name-level">h2</value>
+      </dynamicSettings>
+    </pageItem>
+  </pageItems>
+</recyclerItem>

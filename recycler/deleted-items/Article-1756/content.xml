@@ -1,0 +1,34 @@
+<recyclerItem>
+  <pageItems>
+    <pageItem name="" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Header" isActive="True" objectID="c6f74fef-6c66-4280-a562-25c56af04a08" rssFlag="False" styleName="singleheader" editorType="SlidingPageHeader" orderPosition="1" itemTemplateName="standard" wasCopiedFromArticleObjectID="c6f74fef-6c66-4280-a562-25c56af04a08">
+      <excerpt>Kopfgrafik</excerpt>
+      <value name="header-count">1</value>
+      <value name="header-title-align-1" />
+      <value name="header-image-clickurl-1" />
+      <value name="header-title-level-1" />
+      <value name="duration">7000</value>
+      <value name="effect">slide</value>
+      <value name="excerpt">Kopfgrafik</value>
+      <value name="header-image-clickurl-1_nofollow">False</value>
+      <value name="header-image-clickurl-1_target" />
+      <value name="autoplay">True</value>
+      <value name="header-description-1">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend 
+ultrices arcu, sagittis pharetra ligula pretium bibendum. &lt;/p&gt;</value>
+      <value name="header-image-1">oid://image/screenshot-2025-01-21-at-13-50-23-x</value>
+      <value name="header-title-1">Kopfgrafik</value>
+      <value name="header-title-color-1" />
+    </pageItem>
+  </pageItems>
+  <assets />
+  <imageAssets>
+    <image name="screenshot-2025-01-21-at-13-50-23-x" categoryID="50" categoryName="automatisch-erstellt" visualOutputFileName-contentCopy="screenshot-2025-01-21-at-13-50-23-x.png" visualOutputFileName-workingCopy="screenshot-2025-01-21-at-13-50-23-x-large.png" objectID="screenshot-2025-01-21-at-13-50-23-x" orderPosition="11" type="Image" uiCategoryName="Allgemein" folderPath-original="" fileName-original="b1094b8f2ed9469e88fef8a937497ee8.png" folderPath-workingCopy="" fileName-workingCopy="3d30130c497d4affbe3bdf6477967450.png">
+      <description />
+      <dynamicSettings>
+        <value name="Compression">Lossless</value>
+      </dynamicSettings>
+    </image>
+  </imageAssets>
+  <imageAssetCategories>
+    <imageCategory name="automatisch-erstellt" type="Image" uiName="Automatisch erstellt" objectID="50" />
+  </imageAssetCategories>
+</recyclerItem>

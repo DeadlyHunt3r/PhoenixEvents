@@ -1,0 +1,130 @@
+<recyclerItem>
+  <containers>
+    <container orderPosition="1" areaName="Standard">
+      <paragraph orderPosition="0" areaName="Standard">
+        <value name="column-count">1</value>
+        <value name="column-width-1">100</value>
+        <value name="column-width-unit-1">%</value>
+        <column orderPosition="0" areaName="Standard">
+          <value name="width">100</value>
+          <value name="width-unit">%</value>
+          <dynamicSettings>
+            <value name="cssclass">c12</value>
+          </dynamicSettings>
+          <pageItem name="Ihre Mitteilung an uns" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="{C4CDD1EE-BF45-4190-9C75-CC97AEE48D92}" rssFlag="False" styleName="Text" editorType="None" orderPosition="7" itemTemplateName="Standard">
+            <excerpt>Hier können Sie Ihre Adresse und ein Kontaktformular einfügen.</excerpt>
+            <value name="inlinestyle" />
+            <value name="bild" />
+            <value name="bild-url" />
+            <value name="bild-url_nofollow">False</value>
+            <value name="(trennlinie)" />
+            <value name="bild-url_target" />
+            <value name="optionen" />
+            <value name="text">&lt;p&gt;Hier können Sie Ihre Adresse und ein Kontaktformular
+einfügen.&lt;/p&gt;</value>
+            <value name="darstellung" />
+            <value name="titel" />
+            <dynamicSettings>
+              <value name="name-align">left</value>
+              <value name="name-level">h1</value>
+            </dynamicSettings>
+          </pageItem>
+        </column>
+      </paragraph>
+      <paragraph orderPosition="1" areaName="Standard">
+        <value name="column-count">2</value>
+        <value name="column-width-1">100</value>
+        <value name="column-width-unit-2">%</value>
+        <value name="column-width-2">50</value>
+        <value name="column-width-unit-1">%</value>
+        <column orderPosition="0" areaName="Standard">
+          <value name="width">100</value>
+          <value name="width-unit">%</value>
+          <dynamicSettings>
+            <value name="cssclass">c8</value>
+          </dynamicSettings>
+          <pageItem name="" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="237061c6-9d59-49e1-b0ac-f6c6f3a56c7e" rssFlag="False" styleName="formular" editorType="HtmlForm" orderPosition="9" itemTemplateName="standard">
+            <excerpt />
+            <value name="element-inputtype-3" />
+            <value name="element-height-2">0</value>
+            <value name="email_subject">Nachricht über Kontaktformular</value>
+            <value name="success_page_target" />
+            <value name="element-isrequired-2">True</value>
+            <value name="element-inputtype-1">text</value>
+            <value name="element-name-1">Name</value>
+            <value name="element-attributes-1" />
+            <value name="element-type-3">textarea</value>
+            <value name="element-isrequired-3">False</value>
+            <value name="element-ismultiline-1">False</value>
+            <value name="element-ismultiline-2">False</value>
+            <value name="element-ismultiline-3">True</value>
+            <value name="element-height-1">0</value>
+            <value name="element-isrequired-1">True</value>
+            <value name="element-type-1">text</value>
+            <value name="element-value-3" />
+            <value name="recaptcha-secretkey" />
+            <value name="email_address">info@example.com</value>
+            <value name="element-attributes-3" />
+            <value name="element-name-2">E-Mail</value>
+            <value name="element-count">3</value>
+            <value name="error_page_url">oid://page/de$nachricht_konnte_nicht_versendet_werden</value>
+            <value name="error_page_target" />
+            <value name="element-value-1" />
+            <value name="action_url">assets/php/formmailer/SendEmail.php?sc</value>
+            <value name="element-value-2" />
+            <value name="element-default-3" />
+            <value name="element-default-1" />
+            <value name="element-attributes-2" />
+            <value name="email_template">&lt;h1&gt;Ein Formular wurde Ihnen von Ihrer Website gesendet&lt;/h1&gt;
+&lt;p&gt;Jemand hat Ihnen ein Formular mit den folgenden Werten 
+gesendet.&lt;/p&gt;[FORM_TABLE]</value>
+            <value name="element-height-3">10</value>
+            <value name="success_page_url">oid://page/de$Nachricht_erfolgreich_gesendet</value>
+            <value name="element-type-2">text</value>
+            <value name="recaptcha-publickey" />
+            <value name="element-default-2" />
+            <value name="element-name-3">Nachricht</value>
+            <value name="element-inputtype-2">email</value>
+            <dynamicSettings>
+              <value name="name-align">left</value>
+              <value name="name-level">h3</value>
+              <value name="name-color" />
+            </dynamicSettings>
+          </pageItem>
+        </column>
+        <column orderPosition="1" areaName="Standard">
+          <value name="width">50</value>
+          <value name="width-unit">%</value>
+          <dynamicSettings>
+            <value name="cssclass">c4</value>
+          </dynamicSettings>
+          <pageItem name="Mustermann GmbH" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="kontakt_01" rssFlag="False" styleName="Text" editorType="None" orderPosition="0" itemTemplateName="Standard">
+            <excerpt>Musterstraße 100000 Musterstadt Telefon: +49 40 000000Telefax: +49 40 000000 info@example.com</excerpt>
+            <value name="text">&lt;p&gt;Musterstraße 1&lt;br&gt;00000 Musterstadt&lt;/p&gt;
+&lt;p&gt;Telefon: +49 40 000000&lt;br&gt;Telefax: +49 40 000000&lt;/p&gt;
+&lt;p&gt;&lt;a href="mailto:info@example.com"&gt;info@example.com&lt;/a&gt;&lt;/p&gt;</value>
+            <dynamicSettings>
+              <value name="name-align" />
+              <value name="name-level">h3</value>
+            </dynamicSettings>
+          </pageItem>
+          <pageItem name="" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="8dae4165-7b7d-4314-b90a-3322a0b0b96e" rssFlag="False" styleName="buttonv12" editorType="None" orderPosition="1" itemTemplateName="standard">
+            <excerpt>Ihr Weg zu uns</excerpt>
+            <value name="url">oid://page/de$Wegbeschreibung</value>
+            <value name="align">left</value>
+            <value name="url_target" />
+            <value name="url_nofollow">False</value>
+            <value name="text">Ihr Weg zu uns</value>
+            <dynamicSettings>
+              <value name="name-align">left</value>
+              <value name="name-level">h2</value>
+              <value name="cssclass" />
+              <value name="inlinecss">margin-top: 20px;</value>
+              <value name="name-color" />
+            </dynamicSettings>
+          </pageItem>
+        </column>
+      </paragraph>
+    </container>
+  </containers>
+</recyclerItem>

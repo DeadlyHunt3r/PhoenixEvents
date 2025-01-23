@@ -1,0 +1,36 @@
+.zpSidebarIcons {
+	position: fixed;
+	z-index: 99999;
+	top:  auto;
+	bottom:  auto;
+	left:  auto;
+	right:  auto;
+    box-sizing: border-box;
+}
+.zpSidebarIcons a {
+	display: flex;
+    align-items: center;
+	position: relative;
+	border-style: solid !important;
+	font-weight: normal !important;
+	text-decoration: none !important;
+	line-height: normal !important;
+	white-space: nowrap !important;
+	transition: all 400ms ease !important;
+	box-sizing: border-box !important;
+}
+.zpSidebarIcons a:hover {
+	font-weight: normal !important;
+	text-decoration: none !important;
+}
+.zpSidebarIcons a span {
+	display: flex;
+    align-items: center;
+	box-sizing: border-box;
+}
+.zpSidebarIcons a span.zpSidebarIcon {
+	justify-content: center;
+}
+.zpSidebarIcons a span.zpSidebarText {
+	padding: 0 5px;
+}

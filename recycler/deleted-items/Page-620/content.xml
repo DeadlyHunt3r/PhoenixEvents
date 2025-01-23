@@ -1,0 +1,24 @@
+<recyclerItem>
+  <page activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" dontCachePageItems="False" expirationDate="01/01/0001 00:00:00" fileName="online-buchung" fileType=".php" folderName="" id="620" parentID="603" isActive="True" language2="de" metaKeywords="" name="Online Buchung" objectID="de$online-buchung" sitemapFlag="False" targetNoFollow="False" targetUrl="" targetTarget="" templateFile="" title="" type="Page" orderPosition="4" isVisible="True" hideInTree="False" rootFolderName="/" projectFolderLanguage2="de">
+    <description />
+    <container orderPosition="1" areaName="Standard">
+      <paragraph orderPosition="0" areaName="Standard">
+        <value name="column-count">1</value>
+        <value name="column-width-1">100</value>
+        <value name="column-width-unit-1">%</value>
+        <column orderPosition="0" areaName="Standard">
+          <value name="width">100</value>
+          <value name="width-unit">%</value>
+          <pageItem name="Lewis" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="3ba25e3c-bf5d-476b-8e3a-641d59ccfe06" rssFlag="False" styleName="formularwerte" editorType="None" orderPosition="1" itemTemplateName="formularwerte">
+            <excerpt />
+            <dynamicSettings>
+              <value name="name-align" />
+              <value name="name-color" />
+              <value name="name-level">h2</value>
+            </dynamicSettings>
+          </pageItem>
+        </column>
+      </paragraph>
+    </container>
+  </page>
+</recyclerItem>

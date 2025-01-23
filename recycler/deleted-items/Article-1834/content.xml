@@ -1,0 +1,7 @@
+<recyclerItem>
+  <pageItems>
+    <pageItem name="Online Buchung" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="5e132f89-543b-495e-b684-2300221f2d80" rssFlag="False" styleName="text" editorType="None" orderPosition="1" itemTemplateName="standard">
+      <excerpt />
+    </pageItem>
+  </pageItems>
+</recyclerItem>

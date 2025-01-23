@@ -1,0 +1,36 @@
+<recyclerItem>
+  <pageItems>
+    <pageItem name="" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Header" isActive="True" objectID="2475df1a-9730-4b11-8d08-104490f758ba" rssFlag="False" styleName="singleheader" editorType="SlidingPageHeader" orderPosition="1" itemTemplateName="standard" wasCopiedFromArticleObjectID="2d2878e7-45a6-42c2-a9fa-ea669f3500b0">
+      <excerpt>Kopfgrafik</excerpt>
+      <value name="header-count">1</value>
+      <value name="header-title-align-1" />
+      <value name="header-image-clickurl-1" />
+      <value name="header-title-level-1" />
+      <value name="duration">7000</value>
+      <value name="effect">slide</value>
+      <value name="excerpt">Kopfgrafik</value>
+      <value name="header-image-clickurl-1_nofollow">False</value>
+      <value name="header-image-clickurl-1_target" />
+      <value name="autoplay">True</value>
+      <value name="header-description-1">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend 
+ultrices arcu, sagittis pharetra ligula pretium bibendum. &lt;/p&gt;</value>
+      <value name="header-image-1">oid://image/image-placeholder-header-neg</value>
+      <value name="header-title-1">Kopfgrafik</value>
+      <value name="header-title-color-1" />
+    </pageItem>
+  </pageItems>
+  <assets />
+  <imageAssets>
+    <image name="image-placeholder-neg-01" categoryID="50" categoryName="automatisch-erstellt" visualOutputFileName-contentCopy="image-placeholder-header-neg.png" visualOutputFileName-workingCopy="image-placeholder-header-neg-large.png" objectID="image-placeholder-header-neg" orderPosition="2" type="Image" uiCategoryName="Allgemein" folderPath-original="" fileName-original="13972f946dcb47ecaf6f8b4e7c4111ff.png" folderPath-workingCopy="" fileName-workingCopy="3b98e04771624f7d8079306f4ea1e7eb.png">
+      <description />
+      <dynamicSettings>
+        <value name="description-de" />
+        <value name="alttext" />
+        <value name="alttext-de" />
+      </dynamicSettings>
+    </image>
+  </imageAssets>
+  <imageAssetCategories>
+    <imageCategory name="automatisch-erstellt" type="Image" uiName="Automatisch erstellt" objectID="50" />
+  </imageAssetCategories>
+</recyclerItem>

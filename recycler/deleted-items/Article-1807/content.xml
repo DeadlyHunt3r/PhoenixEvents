@@ -1,0 +1,34 @@
+<recyclerItem>
+  <pageItems>
+    <pageItem name="" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="0070c5e5-410d-4b3a-9d5a-64623ce9a952" rssFlag="False" styleName="singleimage" editorType="SingleImage" orderPosition="0" itemTemplateName="standard">
+      <excerpt>Bild kontakt-5-.jpg</excerpt>
+      <value name="zphoverscale">0</value>
+      <value name="lightbox">lightbox</value>
+      <value name="effect">none</value>
+      <value name="image">oid://image/kontakt-5</value>
+      <value name="clickurl" />
+      <value name="clicktarget" />
+      <value name="clicknofollow">False</value>
+      <value name="excerpt">Bild kontakt-5-.jpg</value>
+    </pageItem>
+  </pageItems>
+  <assets />
+  <imageAssets>
+    <image name="kontakt-5-" categoryID="50" categoryName="automatisch-erstellt" visualOutputFileName-contentCopy="kontakt-5-.jpg" visualOutputFileName-workingCopy="kontakt-5-large.jpg" objectID="kontakt-5" orderPosition="11" type="Image" uiCategoryName="Allgemein" folderPath-original="" fileName-original="8a77622e8f3e45ccb334df9cc0d4591c.jpg" folderPath-workingCopy="" fileName-workingCopy="cfc63bab6e7948ddbcf9b067abe00306.jpg">
+      <description />
+      <dynamicSettings>
+        <value name="Compression">Lossless</value>
+        <value name="Description-de" />
+        <value name="AltText-de" />
+        <value name="AltText" />
+        <value name="ThumbnailImageFileNames.Count">1</value>
+        <value name="ThumbnailImageFileNames.Filename0">media\images\kontakt-5-.jpg</value>
+        <value name="prevUsedMaxContentCopyWidth-Output">1170</value>
+        <value name="prevUsedMaxContentCopyWidthRefID-Output">1807</value>
+      </dynamicSettings>
+    </image>
+  </imageAssets>
+  <imageAssetCategories>
+    <imageCategory name="automatisch-erstellt" type="Image" uiName="Automatisch erstellt" objectID="50" />
+  </imageAssetCategories>
+</recyclerItem>

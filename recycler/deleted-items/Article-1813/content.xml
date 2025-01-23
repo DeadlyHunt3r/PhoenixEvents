@@ -1,0 +1,13 @@
+<recyclerItem>
+  <pageItems>
+    <pageItem name="Kontakt" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="a906e7a2-13d5-43ae-9ffb-89f271439bcf" rssFlag="False" styleName="text" editorType="None" orderPosition="2" itemTemplateName="standard">
+      <excerpt />
+      <value name="Text" />
+      <dynamicSettings>
+        <value name="name-align">center</value>
+        <value name="name-color" />
+        <value name="name-level">h2</value>
+      </dynamicSettings>
+    </pageItem>
+  </pageItems>
+</recyclerItem>

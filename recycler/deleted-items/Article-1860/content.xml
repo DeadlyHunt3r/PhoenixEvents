@@ -1,0 +1,7 @@
+<recyclerItem>
+  <pageItems>
+    <pageItem name="2048" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="8d87d0be-a85b-4845-96cb-1868fe4ab85c" rssFlag="False" styleName="text" editorType="None" orderPosition="0" itemTemplateName="standard">
+      <excerpt />
+    </pageItem>
+  </pageItems>
+</recyclerItem>

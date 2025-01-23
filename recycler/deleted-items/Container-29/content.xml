@@ -1,0 +1,19 @@
+<recyclerItem>
+  <containers>
+    <container orderPosition="1" areaName="Standard">
+      <paragraph orderPosition="0" areaName="Standard">
+        <value name="column-count">1</value>
+        <value name="column-width-1">100</value>
+        <value name="column-width-unit-1">%</value>
+        <column orderPosition="0" areaName="Standard">
+          <value name="width-unit">%</value>
+          <value name="width">100</value>
+          <pageItem name="Unterseite 1-1" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="9e9ec0c6-eb5f-4b2a-9068-e9865175eb04" rssFlag="False" styleName="text" editorType="None" orderPosition="1" itemTemplateName="standard">
+            <excerpt>Platzieren Sie hier Ihre eigenen Texte und Bilder. Bearbeiten Sie diesen Text einfach durch einen Doppelklick.</excerpt>
+            <value name="text">Platzieren Sie hier Ihre eigenen Texte und Bilder. Bearbeiten Sie diesen Text einfach durch einen Doppelklick.</value>
+          </pageItem>
+        </column>
+      </paragraph>
+    </container>
+  </containers>
+</recyclerItem>

@@ -1,0 +1,310 @@
+<recyclerItem>
+  <containers>
+    <container orderPosition="1" areaName="Standard">
+      <paragraph orderPosition="0" areaName="Standard">
+        <value name="column-count">1</value>
+        <value name="column-width-1">100</value>
+        <value name="column-width-unit-1">%</value>
+        <column orderPosition="0" areaName="Standard">
+          <value name="width">100</value>
+          <value name="width-unit">%</value>
+          <dynamicSettings>
+            <value name="cssClass">c12</value>
+          </dynamicSettings>
+          <pageItem name="" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="7b60dd7b-7fed-4b9d-bc28-25bb693389fd" rssFlag="False" styleName="quelltext-(html)" editorType="None" orderPosition="1" itemTemplateName="standard">
+            <excerpt>2048 Spiel body { font-family: Arial, sans-serif; background-color: #faf8ef; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; } .game-container { text-align: center; background-color: #bbada0; padding: 20px; border-radius: 10px; } h1 { font-size: 2rem; margin-bottom: 20px; } .board { display: grid; grid-template-columns: repeat(4, 100px); grid-template-rows: repeat(4, 100px); gap: 10px; justify-content: center; margin-bottom: 20px; } .cell { width: 100px; height: 100px; background-color: #ccc0b3; border-radius: 5px; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; color: #776e65; } .cell-2 { background-color: #eee4da; } .cell-4 { background-color: #ece0c8; } .cell-8 { background-color: #f2b179; } .cell-16 { background-color: #f59563; } .cell-32 { background-color: #f67c5f; } .cell-64 { background-color: #f65e3b; } .cell-128 { background-color: #edcf72; } .cell-256 { background-color: #edcc61; } .cell-512 { background-color: #edc850; } .cell-1024 { background-color: #edc53f; } .cell-2048 { background-color: #edc22e; } .restart { padding: 10px 20px; background-color: #8f7a66; color: white; border: none; border-radius: 5px; cursor: pointer; } .restart:hover { background-color: #776e65; } 2048 Neustart let board = []; let isGameOver = false; let dragging = false; let startX, startY; let currentMove = { x: 0, y: 0 }; const boardElement = document.getElementById('board'); const restartButton = document.getElementById('restart'); function initGame() { board = [ [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], ]; isGameOver = false; spawnTile(); spawnTile(); renderBoard(); } function renderBoard() { boardElement.innerHTML = ''; for (let i = 0; i 0) { move('right'); } else { move('left'); } } else if (Math.abs(currentMove.y)</excerpt>
+            <value name="Text">&lt;!DOCTYPE html&gt;
+&lt;html lang="de"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;2048 Spiel&lt;/title&gt;
+  &lt;style&gt;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #faf8ef;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .game-container {
+      text-align: center;
+      background-color: #bbada0;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .board {
+      display: grid;
+      grid-template-columns: repeat(4, 100px);
+      grid-template-rows: repeat(4, 100px);
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .cell {
+      width: 100px;
+      height: 100px;
+      background-color: #ccc0b3;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #776e65;
+    }
+
+    .cell-2 { background-color: #eee4da; }
+    .cell-4 { background-color: #ece0c8; }
+    .cell-8 { background-color: #f2b179; }
+    .cell-16 { background-color: #f59563; }
+    .cell-32 { background-color: #f67c5f; }
+    .cell-64 { background-color: #f65e3b; }
+    .cell-128 { background-color: #edcf72; }
+    .cell-256 { background-color: #edcc61; }
+    .cell-512 { background-color: #edc850; }
+    .cell-1024 { background-color: #edc53f; }
+    .cell-2048 { background-color: #edc22e; }
+
+    .restart {
+      padding: 10px 20px;
+      background-color: #8f7a66;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .restart:hover {
+      background-color: #776e65;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="game-container"&gt;
+    &lt;h1&gt;2048&lt;/h1&gt;
+    &lt;div id="board" class="board"&gt;&lt;/div&gt;
+    &lt;button id="restart" class="restart"&gt;Neustart&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+    let board = [];
+    let isGameOver = false;
+    let dragging = false;
+    let startX, startY;
+    let currentMove = { x: 0, y: 0 };
+
+    const boardElement = document.getElementById('board');
+    const restartButton = document.getElementById('restart');
+
+    function initGame() {
+      board = [
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+      ];
+      isGameOver = false;
+      spawnTile();
+      spawnTile();
+      renderBoard();
+    }
+
+    function renderBoard() {
+      boardElement.innerHTML = '';
+      for (let i = 0; i &lt; 4; i++) {
+        for (let j = 0; j &lt; 4; j++) {
+          const cellValue = board[i][j];
+          const cell = document.createElement('div');
+          cell.classList.add('cell');
+          if (cellValue &gt; 0) {
+            cell.textContent = cellValue;
+            cell.classList.add(`cell-${cellValue}`);
+          }
+          cell.dataset.row = i;
+          cell.dataset.col = j;
+          boardElement.appendChild(cell);
+        }
+      }
+    }
+
+    function spawnTile() {
+      if (isGameOver) return;
+
+      const emptyCells = [];
+      for (let i = 0; i &lt; 4; i++) {
+        for (let j = 0; j &lt; 4; j++) {
+          if (board[i][j] === 0) {
+            emptyCells.push({ i, j });
+          }
+        }
+      }
+
+      if (emptyCells.length === 0) {
+        isGameOver = true;
+        alert('Spiel vorbei!');
+        return;
+      }
+
+      const { i, j } = emptyCells[Math.floor(Math.random() * emptyCells.length)];
+      board[i][j] = Math.random() &gt; 0.1 ? 2 : 4;
+      renderBoard();
+    }
+
+    function move(direction) {
+      if (isGameOver) return;
+
+      let moved = false;
+
+      if (direction === 'up') {
+        for (let col = 0; col &lt; 4; col++) {
+          let stack = [];
+          for (let row = 0; row &lt; 4; row++) {
+            if (board[row][col] !== 0) {
+              stack.push(board[row][col]);
+            }
+          }
+
+          stack = combine(stack);
+          for (let row = 0; row &lt; 4; row++) {
+            board[row][col] = stack[row] || 0;
+          }
+          if (stack.length &gt; 0) moved = true;
+        }
+      } else if (direction === 'down') {
+        for (let col = 0; col &lt; 4; col++) {
+          let stack = [];
+          for (let row = 3; row &gt;= 0; row--) {
+            if (board[row][col] !== 0) {
+              stack.push(board[row][col]);
+            }
+          }
+
+          stack = combine(stack);
+          for (let row = 3; row &gt;= 0; row--) {
+            board[row][col] = stack[3 - row] || 0;
+          }
+          if (stack.length &gt; 0) moved = true;
+        }
+      } else if (direction === 'left') {
+        for (let row = 0; row &lt; 4; row++) {
+          let stack = [];
+          for (let col = 0; col &lt; 4; col++) {
+            if (board[row][col] !== 0) {
+              stack.push(board[row][col]);
+            }
+          }
+
+          stack = combine(stack);
+          for (let col = 0; col &lt; 4; col++) {
+            board[row][col] = stack[col] || 0;
+          }
+          if (stack.length &gt; 0) moved = true;
+        }
+      } else if (direction === 'right') {
+        for (let row = 0; row &lt; 4; row++) {
+          let stack = [];
+          for (let col = 3; col &gt;= 0; col--) {
+            if (board[row][col] !== 0) {
+              stack.push(board[row][col]);
+            }
+          }
+
+          stack = combine(stack);
+          for (let col = 3; col &gt;= 0; col--) {
+            board[row][col] = stack[3 - col] || 0;
+          }
+          if (stack.length &gt; 0) moved = true;
+        }
+      }
+
+      if (moved) {
+        spawnTile();
+      }
+    }
+
+    function combine(stack) {
+      let newStack = [];
+      for (let i = 0; i &lt; stack.length; i++) {
+        if (stack[i] === stack[i + 1]) {
+          newStack.push(stack[i] * 2);
+          i++;
+        } else {
+          newStack.push(stack[i]);
+        }
+      }
+      return newStack;
+    }
+
+    function handleMouseMove(event) {
+      if (dragging) {
+        const deltaX = event.clientX - startX;
+        const deltaY = event.clientY - startY;
+
+        if (Math.abs(deltaX) &gt; Math.abs(deltaY)) {
+          currentMove.x = deltaX;
+          currentMove.y = 0;
+        } else {
+          currentMove.y = deltaY;
+          currentMove.x = 0;
+        }
+      }
+    }
+
+    function handleMouseUp(event) {
+      if (dragging) {
+        if (Math.abs(currentMove.x) &gt; 50) {
+          if (currentMove.x &gt; 0) {
+            move('right');
+          } else {
+            move('left');
+          }
+        } else if (Math.abs(currentMove.y) &gt; 50) {
+          if (currentMove.y &gt; 0) {
+            move('down');
+          } else {
+            move('up');
+          }
+        }
+        dragging = false;
+        currentMove = { x: 0, y: 0 };
+      }
+    }
+
+    function handleMouseDown(event) {
+      dragging = true;
+      startX = event.clientX;
+      startY = event.clientY;
+    }
+
+    boardElement.addEventListener('mousedown', handleMouseDown);
+    boardElement.addEventListener('mousemove', handleMouseMove);
+    boardElement.addEventListener('mouseup', handleMouseUp);
+
+    restartButton.addEventListener('click', initGame);
+
+    initGame();
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</value>
+            <dynamicSettings>
+              <value name="name-align" />
+              <value name="name-color" />
+              <value name="name-level">h2</value>
+            </dynamicSettings>
+          </pageItem>
+        </column>
+      </paragraph>
+    </container>
+  </containers>
+</recyclerItem>

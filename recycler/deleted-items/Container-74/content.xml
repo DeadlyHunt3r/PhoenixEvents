@@ -1,0 +1,163 @@
+<recyclerItem>
+  <containers>
+    <container orderPosition="1" areaName="Standard">
+      <paragraph orderPosition="0" areaName="Standard">
+        <value name="column-count">1</value>
+        <value name="column-width-1">100</value>
+        <value name="column-width-unit-1">%</value>
+        <column orderPosition="0" areaName="Standard">
+          <value name="width">100</value>
+          <value name="width-unit">%</value>
+          <dynamicSettings>
+            <value name="cssClass">c12</value>
+          </dynamicSettings>
+          <pageItem name="" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="1cabe5c4-6066-48fe-a019-c637b960f0e8" rssFlag="False" styleName="quelltext-(html)" editorType="None" orderPosition="1" itemTemplateName="standard" wasCopiedFromArticleObjectID="1cabe5c4-6066-48fe-a019-c637b960f0e8">
+            <excerpt>Buchungsformular body { font-family: Arial, sans-serif; margin: 0; padding: 0; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #333; /* Dunklerer Hintergrund */ color: #fff; /* Weißer Text */ } h1 { text-align: center; margin-bottom: 20px; color: #f1f1f1; /* Hellerer Titel */ } form { max-width: 400px; width: 100%; padding: 20px; background-color: #444; /* Dunkleres Formular-Hintergrund */ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); border-radius: 8px; } label { display: block; margin-bottom: 5px; font-weight: bold; color: #f1f1f1; /* Helle Schriftfarbe für Labels */ } input, select, button { width: 100%; margin-bottom: 15px; padding: 10px; font-size: 16px; border: 1px solid #666; /* Dunklerer Rand */ border-radius: 4px; background-color: #555; /* Dunkelgrauer Hintergrund für Eingabefelder */ color: #fff; /* Weißer Text in den Eingabefeldern */ } button { background-color: #4CAF50; /* Helle Schaltfläche */ color: white; border: none; cursor: pointer; } button:hover { background-color: #45a049; /* Etwas dunkler bei Hover */ } .response-message { color: green; font-weight: bold; } .error-message { color: red; font-weight: bold; } Buchungsformular Was möchtest du machen? Wähle eine Option Tod im Schatten der Wahrheit Mit wie vielen Personen? An welchem Datum? Um wie viel Uhr? Vor- und Nachname: Telefonnummer: Absenden document.getElementById('booking-form').addEventListener('submit', async (e) =&lt;/script&lt;/body&lt;/html</excerpt>
+            <value name="Text">&lt;!DOCTYPE html&gt;
+&lt;html lang="de"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Buchungsformular&lt;/title&gt;
+  &lt;style&gt;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #333; /* Dunklerer Hintergrund */
+      color: #fff; /* Weißer Text */
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #f1f1f1; /* Hellerer Titel */
+    }
+    form {
+      max-width: 400px;
+      width: 100%;
+      padding: 20px;
+      background-color: #444; /* Dunkleres Formular-Hintergrund */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 8px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #f1f1f1; /* Helle Schriftfarbe für Labels */
+    }
+    input, select, button {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #666; /* Dunklerer Rand */
+      border-radius: 4px;
+      background-color: #555; /* Dunkelgrauer Hintergrund für Eingabefelder */
+      color: #fff; /* Weißer Text in den Eingabefeldern */
+    }
+    button {
+      background-color: #4CAF50; /* Helle Schaltfläche */
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049; /* Etwas dunkler bei Hover */
+    }
+    .response-message {
+      color: green;
+      font-weight: bold;
+    }
+    .error-message {
+      color: red;
+      font-weight: bold;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Buchungsformular&lt;/h1&gt;
+  &lt;form id="booking-form"&gt;
+    &lt;label for="activity"&gt;Was möchtest du machen?&lt;/label&gt;
+    &lt;select id="activity" name="activity" required&gt;
+      &lt;option value="" disabled selected&gt;Wähle eine Option&lt;/option&gt;
+      &lt;option value="Tod im Schatten"&gt;Tod im Schatten der Wahrheit&lt;/option&gt;
+    &lt;/select&gt;
+
+    &lt;label for="persons"&gt;Mit wie vielen Personen?&lt;/label&gt;
+    &lt;input type="number" id="persons" name="persons" min="1" max="20" required&gt;
+
+    &lt;label for="date"&gt;An welchem Datum?&lt;/label&gt;
+    &lt;input type="date" id="date" name="date" required&gt;
+
+    &lt;label for="time"&gt;Um wie viel Uhr?&lt;/label&gt;
+    &lt;input type="time" id="time" name="time" required&gt;
+
+    &lt;label for="name"&gt;Vor- und Nachname:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" required&gt;
+
+    &lt;label for="phone"&gt;Telefonnummer:&lt;/label&gt;
+    &lt;input type="tel" id="phone" name="phone" pattern="^[0-9+\s-]+$" required&gt;
+
+    &lt;button type="submit"&gt;Absenden&lt;/button&gt;
+  &lt;/form&gt;
+
+  &lt;p id="response-message" class="response-message"&gt;&lt;/p&gt;
+  &lt;p id="error-message" class="error-message"&gt;&lt;/p&gt;
+
+  &lt;script&gt;
+    document.getElementById('booking-form').addEventListener('submit', async (e) =&gt; {
+      e.preventDefault();
+
+      const formData = {
+        data: {
+          activity: document.getElementById('activity').value,
+          persons: document.getElementById('persons').value,
+          date: document.getElementById('date').value,
+          time: document.getElementById('time').value,
+          name: document.getElementById('name').value,
+          phone: document.getElementById('phone').value,
+        }
+      };
+
+      try {
+        const response = await fetch('https://sheetdb.io/api/v1/z05isuyc3h1lf?sheet=Test', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          document.getElementById('response-message').textContent = 'Deine Buchung wurde erfolgreich gesendet!';
+          document.getElementById('error-message').textContent = '';
+          document.getElementById('booking-form').reset();
+        } else {
+          throw new Error('Es gab ein Problem beim Senden des Formulars.');
+        }
+      } catch (error) {
+        document.getElementById('error-message').textContent = 'Fehler: ' + error.message;
+        document.getElementById('response-message').textContent = '';
+      }
+    });
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</value>
+            <dynamicSettings>
+              <value name="name-align" />
+              <value name="name-color" />
+              <value name="name-level">h2</value>
+            </dynamicSettings>
+          </pageItem>
+        </column>
+      </paragraph>
+    </container>
+  </containers>
+</recyclerItem>

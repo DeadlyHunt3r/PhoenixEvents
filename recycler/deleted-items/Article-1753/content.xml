@@ -1,0 +1,8 @@
+<recyclerItem>
+  <pageItems>
+    <pageItem name="Unterseite 1-1" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="9e9ec0c6-eb5f-4b2a-9068-e9865175eb04" rssFlag="False" styleName="text" editorType="None" orderPosition="1" itemTemplateName="standard">
+      <excerpt>Platzieren Sie hier Ihre eigenen Texte und Bilder. Bearbeiten Sie diesen Text einfach durch einen Doppelklick.</excerpt>
+      <value name="text">Platzieren Sie hier Ihre eigenen Texte und Bilder. Bearbeiten Sie diesen Text einfach durch einen Doppelklick.</value>
+    </pageItem>
+  </pageItems>
+</recyclerItem>

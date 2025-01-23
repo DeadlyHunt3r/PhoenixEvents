@@ -1,0 +1,61 @@
+<recyclerItem>
+  <containers>
+    <container orderPosition="1" areaName="Standard">
+      <paragraph orderPosition="2" areaName="Standard">
+        <value name="column-count">1</value>
+        <value name="column-width-1">100</value>
+        <value name="column-width-unit-1">%</value>
+        <column orderPosition="2" areaName="Standard">
+          <value name="width">100</value>
+          <value name="width-unit">%</value>
+          <pageItem name="Impressum" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="8d154016-4864-4522-9964-335bcc6ac5d3" rssFlag="False" styleName="Text" editorType="None" orderPosition="2" itemTemplateName="Standard">
+            <excerpt>Tipps und Informationen zur Impressumspflicht finden Sie im Online-Handbuch.</excerpt>
+            <value name="inlinestyle" />
+            <value name="bild" />
+            <value name="bild-url" />
+            <value name="bild-url_nofollow">False</value>
+            <value name="(trennlinie)" />
+            <value name="bild-url_target" />
+            <value name="optionen" />
+            <value name="text">&lt;p&gt;Tipps und Informationen zur Impressumspflicht finden Sie im &lt;a href="http://docs.zeta-producer.com/impressum-fuer-webseiten.html"&gt;Online-Handbuch.&lt;/a&gt;&lt;/p&gt;</value>
+            <value name="darstellung" />
+            <value name="titel" />
+            <dynamicSettings>
+              <value name="name-align">left</value>
+              <value name="name-level">h1</value>
+              <value name="name-color" />
+            </dynamicSettings>
+          </pageItem>
+        </column>
+      </paragraph>
+      <paragraph orderPosition="4" areaName="Standard">
+        <value name="column-count">1</value>
+        <value name="column-width-1">100</value>
+        <value name="column-width-unit-1">%</value>
+        <column orderPosition="4" areaName="Standard">
+          <value name="width">100</value>
+          <value name="width-unit">%</value>
+          <pageItem name="Bildnachweise" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="94aaff19-e416-4dfc-8799-c1dcc15f40dc" rssFlag="False" styleName="Text" editorType="None" orderPosition="4" itemTemplateName="Standard">
+            <excerpt>Urheber und Bildquelle der im Original-Layout "#val(layout)" verwendeten Bilder:#val(photocredits)</excerpt>
+            <value name="darstellung" />
+            <value name="inlinestyle" />
+            <value name="bild" />
+            <value name="bild-url" />
+            <value name="bild-url_nofollow">False</value>
+            <value name="bild-url_target" />
+            <value name="optionen" />
+            <value name="text">&lt;p&gt;&lt;strong&gt;Urheber und Bildquelle der im Original-Layout 
+"#val(layout)" verwendeten 
+Bilder:&lt;/strong&gt;&lt;br&gt;#val(photocredits)&lt;/p&gt;</value>
+            <value name="(trennlinie)" />
+            <value name="titel" />
+            <dynamicSettings>
+              <value name="name-align">left</value>
+              <value name="name-level">h2</value>
+            </dynamicSettings>
+          </pageItem>
+        </column>
+      </paragraph>
+    </container>
+  </containers>
+</recyclerItem>

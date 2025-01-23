@@ -1,0 +1,37 @@
+<recyclerItem>
+  <pageItems>
+    <pageItem name="" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="70019e3c-0032-4c79-bfca-0f330632d132" rssFlag="False" styleName="singleimage" editorType="SingleImage" orderPosition="1" itemTemplateName="standard" wasCopiedFromArticleObjectID="70019e3c-0032-4c79-bfca-0f330632d132">
+      <excerpt>Bild image-placeholder-neg.png</excerpt>
+      <value name="excerpt">Bild image-placeholder-neg.png</value>
+      <value name="clicknofollow">True</value>
+      <value name="image">oid://image/image-placeholder-neg</value>
+      <value name="clickurl">oid://page/de$unterseite-3</value>
+      <value name="clicktarget" />
+      <value name="lightbox">url</value>
+      <value name="effect">none</value>
+      <dynamicSettings>
+        <value name="groupid">635938941692158966</value>
+      </dynamicSettings>
+    </pageItem>
+  </pageItems>
+  <assets />
+  <imageAssets>
+    <image name="image-placeholder-neg" categoryID="50" categoryName="automatisch-erstellt" visualOutputFileName-contentCopy="image-placeholder-neg.png" visualOutputFileName-workingCopy="image-placeholder-neg-large.png" objectID="image-placeholder-neg" orderPosition="5" type="Image" uiCategoryName="Allgemein" folderPath-original="" fileName-original="210d353cadd44699ad1b6a7a6ac33416.png" folderPath-workingCopy="" fileName-workingCopy="ad673ab4e9e943d6b899770ac9b2a73d.png">
+      <description />
+      <dynamicSettings>
+        <value name="ThumbnailImageFileNames.Filename0">media\images\image-placeholder-neg.png</value>
+        <value name="thumbnailimagefilenames.count">1</value>
+        <value name="alttext" />
+        <value name="alttext-de" />
+        <value name="prevusedmaxcontentcopywidthrefid">1336</value>
+        <value name="description-de" />
+        <value name="prevusedmaxcontentcopywidth">0</value>
+        <value name="prevUsedMaxContentCopyWidth-Output">449</value>
+        <value name="prevUsedMaxContentCopyWidthRefID-Output">1764</value>
+      </dynamicSettings>
+    </image>
+  </imageAssets>
+  <imageAssetCategories>
+    <imageCategory name="automatisch-erstellt" type="Image" uiName="Automatisch erstellt" objectID="50" />
+  </imageAssetCategories>
+</recyclerItem>

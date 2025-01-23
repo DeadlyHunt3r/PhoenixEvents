@@ -1,0 +1,25 @@
+<recyclerItem>
+  <paragraphs>
+    <paragraph orderPosition="0" areaName="Standard">
+      <value name="column-count">1</value>
+      <value name="column-width-1">100</value>
+      <value name="column-width-unit-1">%</value>
+      <column orderPosition="0" areaName="Standard">
+        <value name="width">100</value>
+        <value name="width-unit">%</value>
+        <dynamicSettings>
+          <value name="cssClass">c5</value>
+        </dynamicSettings>
+        <pageItem name="" activeBegin="01/01/0001 00:00:00" activeEnd="01/01/0001 00:00:00" alwaysBuild="False" areaName="Standard" isActive="True" objectID="1a6cc229-a37a-4e1d-b342-5538343818da" rssFlag="False" styleName="text" editorType="None" orderPosition="1" itemTemplateName="standard">
+          <excerpt />
+          <value name="Text" />
+          <dynamicSettings>
+            <value name="name-align" />
+            <value name="name-color" />
+            <value name="name-level">h2</value>
+          </dynamicSettings>
+        </pageItem>
+      </column>
+    </paragraph>
+  </paragraphs>
+</recyclerItem>

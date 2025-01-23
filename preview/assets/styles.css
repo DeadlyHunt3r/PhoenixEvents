@@ -1,0 +1,1559 @@
+﻿/*!
+* Layout: Flat Responsive
+* $Id: styles.less 2023-05-16 10:06:17 +0200 Stefan S  f4af2497d748242574acff05c582ad68995981e3 $
+* Copyright Zeta Software GmbH
+*/
+
+/* Reset */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L16 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L24 */
+tr,
+th,
+td {
+  vertical-align: top;
+}
+/*
+:not(#cms_content):not(.zpshopbasket):not(.zp-shopform.basket){
+	table, caption, tbody, tfoot, thead, tr, th, td {
+		margin: 0;
+		padding: 0;
+		font-size: 100%;
+		font: inherit;
+	}
+}
+*/
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L35 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L39 */
+ol,
+ul {
+  list-style: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L43 */
+b,
+strong {
+  font-weight: bold;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L47 */
+blockquote,
+q {
+  quotes: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L52 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L57 */
+body {
+  -webkit-text-size-adjust: none;
+}
+/* Box Model */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L63 */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* Containers */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L69 */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Basic */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L77 */
+html {
+  font-size: 100%;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L81 */
+body {
+  background-color: rgba(46, 49, 65, 0.8);
+  color: #fafafa;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L92 */
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L97 */
+em,
+i {
+  font-style: italic;
+}
+/* hyphenation switch */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L102 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  -webkit-hyphenate-limit-lines: 2;
+  -moz-hyphenate-limit-lines: 2;
+  -ms-hyphenate-limit-lines: 2;
+  hyphenate-limit-lines: 2;
+  -webkit-hyphenate-limit-chars: auto 3;
+  -moz-hyphenate-limit-chars: auto 3;
+  -ms-hyphenate-limit-chars: auto 3;
+  hyphenate-limit-chars: auto 3;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L106 */
+p {
+  margin: 0 0 0.5em 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L110 */
+h1 {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
+  color: #fafafa;
+  font-weight: lighter;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L120 */
+h2 {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  color: #fafafa;
+  font-weight: lighter;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  text-transform: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L130 */
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  color: #fafafa;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  text-transform: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L139 */
+.articlearea > h1:last-child,
+.articlearea > h2:last-child,
+.articlearea > h3:last-child,
+.articlearea > h4:last-child,
+.articlearea > h5:last-child,
+.articlearea > h6:last-child,
+.articlearea > p:last-child {
+  margin: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L151 */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+a.zpSO-Uplink-Flat,
+a.zpSO-Uplink-Flat:hover {
+  color: inherit;
+  border-bottom: 0 !important;
+  text-decoration: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L158 */
+#content .zpwBild > a {
+  border-bottom: 0 !important;
+  text-decoration: none !important;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L165 */
+sub {
+  font-size: 0.8em;
+  position: relative;
+  top: 0.5em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L171 */
+sup {
+  font-size: 0.8em;
+  position: relative;
+  top: -0.5em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L177 */
+hr {
+  border: 0;
+  border-bottom: solid 1px #313032;
+  margin: 2em 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L183 */
+blockquote {
+  border-left: solid 4px #313032;
+  font-style: italic;
+  margin: 0 0 0.5em 0;
+  padding: 0.5em 0 0.5em 2em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L190 */
+code {
+  background: rgba(207, 201, 214, 0.035);
+  border: solid 1px #313032;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+  margin: 0 0.25em;
+  padding: 0.25em 0.65em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L198 */
+pre {
+  -webkit-overflow-scrolling: touch;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+  margin: 0 0 0.5em 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L204 */
+pre code {
+  display: block;
+  line-height: 1.75em;
+  padding: 1em 1.5em;
+  overflow-x: auto;
+}
+/* Lists */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L212 */
+ol {
+  list-style: decimal;
+  margin: 0 0 0.5em 0;
+  padding-left: 2em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L217 */
+ol li {
+  padding-left: 0.25em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L221 */
+ul:not(.slides) {
+  list-style: square;
+  margin: 0 0 0.5em 0;
+  padding-left: 1.2em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L226 */
+ul:not(.slides) li {
+  padding-left: 0.5em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L229 */
+dl {
+  margin: 0 0 0.5em 0;
+}
+/* go to top arrow */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L233 */
+#totop {
+  text-align: center;
+  overflow: hidden;
+  padding: 1em 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L237 */
+#totop .zpSO-Uplink-Flat {
+  text-align: center;
+  box-sizing: content-box;
+  height: 1em;
+  width: 1em;
+  padding: 10px 16px 0 16px;
+  display: inline-block;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L245 */
+#totop .zpSO-Uplink-Flat:after {
+  content: '';
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  border-color: inherit;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* Restrict article max width */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L260 */
+#banner > .zpgrid > #grid,
+#content > .zpgrid > #grid,
+#afterfooter > .zpgrid > #grid {
+  max-width: 1200px !important;
+  left: 0;
+  right: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L267 */
+#breadcrumb {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L272 */
+.zpContainer {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L276 */
+.zpContainer.first:not(.styled) {
+  padding-top: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L279 */
+.zpContainer:not(.zpBreakout) {
+  max-width: 1200px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L283 */
+.zpContainer.styled {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L286 */
+.zpContainer.styled div.zpRow:first-child {
+  margin-top: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L290 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L291 */
+.zpContainer:not(.styled) div.zpRow:first-child {
+  margin-top: 0;
+  padding-top: 2em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L297 */
+.zpContainer div.zpRow {
+  max-width: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-top: 0.5em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L303 */
+.zpContainer div.zpRow .zpColumnItem .zpBreakout:not(.zpwBild.left):not(.zpwBild.right) {
+  margin-bottom: -2em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L306 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L311 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L312 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L313 */
+.zpContainer:not(.first) div.zpRow .zpColumnItem .zpBreakout {
+  margin-top: -2em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L319 */
+.zpContainer.zpBreakout + .zpContainer:not(.zpBreakout) {
+  margin-top: 2em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L325 */
+body:not(.withnews) .zpBreakout:not(.hasNews) .zpRow {
+  margin-bottom: 2em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L327 */
+body:not(.withnews) .zpBreakout:not(.hasNews) .zpRow:last-child {
+  margin-bottom: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L333 */
+div.zpRow.quelltext {
+  margin: 0 auto;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L337 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L343 */
+.content:after,
+.zpgrid:after,
+.zpContainer:after,
+div.zpRow:after,
+.zpColumn:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L350 */
+div.zpieEmptyArea .zpieHighlight {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+/* banner teaser */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L356 */
+#banner {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  color: #fafafa;
+  line-height: 1.5;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L362 */
+#banner p {
+  margin: 0 0 0.5em 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L365 */
+#banner a:not(.fancybox):not(.zpnolayoutlinkstyles) {
+  color: #fafafa;
+  border-bottom: dotted 1px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L371 */
+#banner a:not(.fancybox):not(.zpnolayoutlinkstyles):hover {
+  color: #05cbff;
+  border-bottom: dotted 1px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L379 */
+#banner h1,
+#banner h2,
+#banner h3,
+#banner h4,
+#banner h5,
+#banner h6 {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  color: #fafafa;
+  font-weight: lighter;
+}
+/* Main */
+
+/* Header */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L400 */
+#header {
+  text-align: left;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L403 */
+#header #webdescription {
+  background-color: transparent;
+  text-align: center;
+  padding: 2em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L408 */
+#header #webdescription #logo img {
+  max-width: 100%;
+  height: auto;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L412 */
+#header #webdescription #logo:not(:last-child) {
+  margin-bottom: 1em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L416 */
+#header #webdescription #webtext {
+  letter-spacing: 0.1em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L420 */
+#header #webdescription h1,
+#header #webdescription #webname {
+  font-family: Comfortaa;
+  font-size: 2.5em;
+  color: #fafafa;
+  font-weight: lighter;
+  font-style: normal;
+  text-transform: none;
+  line-height: 1.2;
+  margin: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L429 */
+#header #webdescription h1 a,
+#header #webdescription #webname a {
+  text-decoration: none;
+  border: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L434 */
+#header #webdescription p,
+#header #webdescription #slogan {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.35em;
+  color: #fafafa;
+  font-weight: lighter;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L443 */
+#header #webdescription.empty {
+  padding: 0;
+  min-height: 16px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L449 */
+#header #nav {
+  position: relative;
+  z-index: 101;
+  background-color: rgba(53, 56, 73, 0.95);
+  -webkit-transition: max-height 300ms ease-in-out;
+  -o-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+  height: 36px;
+  max-height: 36px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L463 */
+#header #nav > ul li.overflownonly {
+  display: none;
+  background-color: #000000;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L467 */
+#header #nav > ul.overflown li.overflownonly {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L473 */
+#header #nav > ul {
+  display: block;
+  max-height: 36px;
+  position: relative;
+  margin-bottom: 0;
+  padding: 0;
+  word-spacing: -4px;
+  background-color: rgba(53, 56, 73, 0.95);
+  width: 100%;
+  font-size: 0.8em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L484 */
+#header #nav > ul > li {
+  word-spacing: normal;
+  margin-right: 1px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L487 */
+#header #nav > ul > li:last-child {
+  margin-right: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L490 */
+#header #nav > ul > li.open > a {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L495 */
+#header #nav > ul li.logo {
+  -webkit-transition: width 600ms, opacity 400ms linear 400ms;
+  -o-transition: width 600ms, opacity 400ms linear 400ms;
+  transition: width 600ms, opacity 400ms linear 400ms;
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  min-width: 0;
+  background-color: transparent;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L503 */
+#header #nav > ul li.logo > a,
+#header #nav > ul li.logo > a.active {
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  line-height: 0;
+  margin: 0;
+  padding: 10px 2em 10px 2em;
+  max-height: 100%;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L514 */
+#header #nav > ul li.logo > a img,
+#header #nav > ul li.logo > a.active img {
+  max-width: 100%;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L522 */
+#header #nav > ul li {
+  display: inline-block;
+  line-height: 36px;
+  padding: 0;
+  position: relative;
+  vertical-align: top;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L529 */
+#header #nav > ul li a {
+  height: 36px;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  color: #ffffff;
+  display: block;
+  letter-spacing: 0.1em;
+  padding: 0 2em;
+  text-decoration: none;
+  text-indent: 0.125em;
+  text-transform: uppercase;
+  background-color: rgba(53, 56, 73, 0.95);
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L542 */
+#header #nav > ul li a.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L547 */
+#header #nav > ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  z-index: 5;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(53, 56, 73, 0.95);
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L559 */
+#header #nav > ul ul.hidden {
+  display: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L563 */
+#header #nav > ul ul ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L570 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L571 */
+#header #nav > ul.overflown li:not(.overflownonly):not(.logo) {
+  display: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L574 */
+#header #nav > ul.overflown li.logo {
+  display: inline-block;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L576 */
+#header #nav > ul.overflown li.logo a.logo {
+  visibility: hidden;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L582 */
+#header #nav li.haschilds > a,
+#header #nav .dropdown-menu li.haschilds {
+  padding-right: 3em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L587 */
+#header #nav li.haschilds > a:after,
+#header #nav .dropdown-menu li.haschilds > a:after {
+  content: '';
+  box-sizing: content-box;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  margin-top: -0.3em;
+  right: 2em;
+  height: 0.5em;
+  width: 0.5em;
+  border-color: inherit;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  display: block;
+  -webkit-transition: transform 200ms ease;
+  -o-transition: transform 200ms ease;
+  transition: transform 200ms ease;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-transform-origin: 50% 40%;
+  transform-origin: 50% 40%;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L609 */
+#header #nav li.haschilds.clicked > a:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L612 */
+#header #nav > ul > li.haschilds > a:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L615 */
+#header #nav > ul > li.haschilds.clicked > a:after {
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L621 */
+#header #nav ul ul li {
+  display: block;
+  border: 0;
+  line-height: 3em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L626 */
+#header #nav ul ul li a {
+  height: auto;
+  text-align: left;
+  letter-spacing: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L638 */
+#header #nav.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  /* figure out a way to make submenus scroll if window isn't tall enough
+		> ul {
+			ul{
+				// make submenus scroll when they don't fit the window height
+				max-height: 100vh;
+				overflow-x: visible;
+				overflow-y: auto;
+			}
+		}
+		*/
+
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L643 */
+#header #nav.fixed ul > li.logo {
+  display: inline-block;
+  width: calc(59px + 4em);
+  opacity: 1;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L648 */
+#header #nav.fixed ul > li.logo a.logo {
+  visibility: visible;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L652 */
+#header #nav.fixed ul > li.logo.hidden {
+  width: 0;
+  overflow: hidden;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L668 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L669 */
+#header #nav:not(.on) li.overflowing {
+  visibility: hidden;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L672 */
+#header #nav.on {
+  height: auto;
+  max-height: 100%;
+  width: 100vw;
+  max-width: 100%;
+  padding-bottom: 10px;
+  background-color: rgba(53, 56, 73, 0.95);
+  text-align: left;
+  overflow-y: hidden;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L682 */
+#header #nav.on #search.menusearch {
+  padding: 0 2em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L684 */
+#header #nav.on #search.menusearch #zpsearchform {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L691 */
+#header #nav.on > ul li.overflownonly {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L697 */
+#header #nav.on > ul.overflown li.overflownonly,
+#header #nav.on > ul.overflown li.overflownonly a {
+  border-top: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L704 */
+#header #nav.on ul {
+  max-height: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L708 */
+#header #nav.on ul li {
+  display: block !important;
+  border: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L713 */
+#header #nav.on ul ul {
+  margin-left: 1em;
+  position: static;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L719 */
+#header #nav.on li.open > ul:not(.hidden) {
+  display: block;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L722 */
+#header #nav.on ul li > a:not(#mobilenavtoggle):not(.logo) {
+  line-height: 3.5em;
+  height: auto;
+  letter-spacing: normal;
+  position: relative;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L729 */
+#header #nav.on li.haschilds > a:after,
+#header #nav.on .dropdown-menu li.haschilds > a:after {
+  content: '';
+  box-sizing: content-box;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  margin-top: -0.25em;
+  right: 15px;
+  height: 0.5em;
+  width: 0.5em;
+  border-color: inherit;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  display: block;
+  -webkit-transition: transform 200ms ease;
+  -o-transition: transform 200ms ease;
+  transition: transform 200ms ease;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L749 */
+#header #nav.on li.haschilds.open > a:after,
+#header #nav.on li.haschilds.clicked > a:after {
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L754 */
+#header #nav.on > ul {
+  width: 100%;
+  display: block;
+  max-height: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L759 */
+#header #nav.on > ul > li:not(.logo):not(.overflownonly) {
+  border-top: solid 1px rgba(85, 90, 117, 0.95);
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L762 */
+#header #nav.on > ul > li.logo {
+  background-color: rgba(53, 56, 73, 0.95);
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L764 */
+#header #nav.on > ul > li.logo a,
+#header #nav.on > ul > li.logo a:hover {
+  background-color: transparent;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L769 */
+#header #nav.on.fixed {
+  max-height: 100vh;
+  overflow-y: auto;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L773 */
+#header #nav.on.fixed > ul li.overflownonly {
+  position: fixed;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L779 */
+.ie #header #nav > ul li a.logo img[src$=".svg"] {
+  width: 100%;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L784 */
+.ie #header #nav > ul li a.logo img {
+  height: 100%;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L789 */
+body:not(.haswebdescription):not(.hasbanner).hasfixednav {
+  padding-top: 36px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L791 */
+body:not(.haswebdescription):not(.hasbanner).hasfixednav #header #nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 20;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L798 */
+body.padded {
+  padding-top: 36px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L803 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L804 */
+body.hasfixednav.padded #webdescription {
+  visibility: hidden;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L811 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L812 */
+.notouch #header #nav > ul li a:hover,
+.notouch #header #nav > ul li a.active:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L817 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L818 */
+.notouch #header #nav:not(.on) li.haschilds:not(.closed):hover > a:after,
+.notouch #header #nav:not(.on) .dropdown-menu li.haschilds:not(.closed):hover > a:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L822 */
+.notouch #header #nav:not(.on) > ul > li.haschilds:not(.closed):hover > a:after,
+.notouch #header #nav:not(.on) .dropdown-menu li.haschilds:not(.closed):hover > a:after {
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L828 */
+.notouch #header #nav:not(.on) li:hover > ul:not(.hidden) {
+  display: block;
+}
+/* Kopfgrafik */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L835 */
+.edge .touch .flexslider:hover .flex-next,
+.edge .touch .flexslider:hover .next,
+.flexslider:hover .flex-next,
+.flexslider:hover .next {
+  opacity: 1;
+  right: 10px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L838 */
+.edge .touch .flexslider:hover .flex-prev,
+.edge .touch .flexslider:hover .prev,
+.flexslider:hover .flex-prev,
+.flexslider:hover .prev {
+  opacity: 1;
+  left: 10px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L841 */
+.touch .flexslider .flex-direction-nav .flex-prev,
+.touch .flexslider .flex-direction-nav .prev {
+  opacity: 1;
+  left: 10px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L846 */
+.touch .flexslider .flex-direction-nav .flex-next,
+.touch .flexslider .flex-direction-nav .next {
+  opacity: 1;
+  right: 10px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L852 */
+#slider {
+  overflow: hidden;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L855 */
+#slider #headerslider {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  color: #fafafa;
+  line-height: 1.5;
+  border-top: 0 !important;
+  text-align: center;
+  text-shadow: 1px 1px 0 #000000;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L866 */
+#slider h1,
+#slider h2,
+#slider h3,
+#slider h4,
+#slider h5,
+#slider h6 {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: normal;
+  line-height: 1.1;
+  color: #fafafa;
+  text-shadow: 1px 1px 0 #000000;
+  margin: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L877 */
+#slider p {
+  margin: 0 0 0.5em 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L881 */
+#slider a {
+  color: transparent;
+  text-decoration: underline;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L885 */
+#slider a:hover {
+  color: #05cbff;
+  text-decoration: underline;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L891 */
+#slider > :last-child {
+  margin-bottom: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L895 */
+#slider .slides > li {
+  position: relative;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L898 */
+#slider .slides > li img {
+  height: auto;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L903 */
+#slider .flex-caption {
+  background-color: transparent;
+  position: absolute;
+  width: 90%;
+  max-height: 90%;
+  padding: 1em;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  overflow: auto;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L914 */
+#slider .flexslider {
+  box-shadow: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L917 */
+#slider .flex-direction-nav {
+  list-style: none !important;
+  margin: 0 !important;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L921 */
+#slider .flex-direction-nav a {
+  color: #fafafa;
+  background: transparent;
+  border: 0;
+  width: 30px;
+  height: 40px;
+  margin: -20px 0 0;
+  text-decoration: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L931 */
+#slider .flex-direction-nav a:hover {
+  color: inherit;
+  opacity: 0.7;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L935 */
+#slider .flex-direction-nav a:before {
+  content: "⟨";
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 40px;
+  text-indent: 0;
+  text-align: center;
+  border: 0;
+  text-decoration: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L952 */
+#slider .flex-direction-nav .flex-next:before,
+#slider .flex-direction-nav .next:before {
+  content: "⟩";
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L956 */
+#slider .flex-control-nav {
+  z-index: 10;
+  bottom: 4px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L960 */
+#slider .flex-control-paging li {
+  margin: 0 5px;
+  padding: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L963 */
+#slider .flex-control-paging li a {
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L968 */
+#slider .flex-control-paging li a.flex-active {
+  background: rgba(255, 255, 255, 0.7);
+}
+@media screen and (max-width: 640px) {
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L976 */
+  #slider .flexslider .flex-prev,
+  #slider .flexslider .prev,
+  #slider .flexslider .flex-next,
+  #slider .flexslider .next,
+  #slider .flexslider:hover .flex-prev,
+  #slider .flexslider:hover .prev,
+  #slider .flexslider:hover .flex-next,
+  #slider .flexslider:hover .next {
+    opacity: 0 !important;
+  }
+}
+/* button */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L990 */
+a.button,
+button.button,
+input.button,
+input[type="button"] {
+  -webkit-appearance: none;
+  display: inline-block;
+  margin: 0 10px 0.5em 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: normal;
+  color: #fafafa !important;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #fafafa;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1009 */
+.zp-form input.button {
+  color: #fafafa;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1013 */
+a.button:hover,
+input.button:hover,
+.zp-form input.button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fafafa !important;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1019 */
+a.button span,
+input.button {
+  display: block;
+  margin: 0;
+  padding: 8px 15px;
+}
+/* Reset possible browser default (cough: Safari) border radii on input */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1026 */
+input,
+.zp-form.zp14 select,
+.zp-shopform select {
+  border-radius: 0;
+}
+/* content */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1033 */
+.ie .zparea.zpgrid > .zpContainer.styled.zpBreakout:last-child .zpRow:last-child,
+.mozilla .zparea.zpgrid > .zpContainer.styled.zpBreakout:last-child .zpRow:last-child {
+  overflow: hidden !important;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1038 */
+#content {
+  position: relative;
+  background-color: transparent;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #fafafa;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1043 */
+#content #breadcrumb {
+  padding: 2em 15px;
+  font-size: 1em;
+  color: #fafafa;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1048 */
+#content #breadcrumb a {
+  color: #fafafa;
+  border-bottom: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1054 */
+#content #breadcrumb a:hover {
+  color: #05cbff;
+  border-bottom: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1062 */
+#content #breadcrumb span.divider {
+  color: #fafafa;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1072 */
+#content p {
+  margin: 0 0 0.5em 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1076 */
+#content a:not(.button):not(.fancybox):not(.zpSO-Uplink-Flat):not(.zpnolayoutlinkstyles) {
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  border-bottom: dotted 1px;
+  color: #fafafa;
+  text-decoration: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1084 */
+#content a:not(.button):not(.fancybox):not(.zpnolayoutlinkstyles):hover {
+  border-bottom: dotted 1px;
+  color: #05cbff;
+  text-decoration: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1092 */
+#content #content .zpwBild > a:not(.addspecificy),
+#content #content .zpwBild > a:not(.addspecificy):hover {
+  border-bottom: 0;
+}
+/* Search */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1099 */
+#search {
+  background: transparent;
+  box-sizing: border-box;
+  padding: 2em 3em;
+  padding-left: calc(3vw + 15px);
+  padding-right: calc(3vw + 15px);
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100% !important;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1109 */
+#search.topsearch {
+  padding-top: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1112 */
+#search.menusearch {
+  width: auto !important;
+  padding: 0;
+  max-height: 36px;
+  overflow: hidden;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1117 */
+#search.menusearch #zpsearchform {
+  margin: 0;
+  padding: 0;
+  width: 125px;
+  max-width: 125px;
+  height: 36px;
+  max-height: 36px;
+  overflow: hidden;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1125 */
+#search.menusearch #zpsearchform #zpsearchfield {
+  height: 36px;
+  box-sizing: border-box;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1130 */
+#search.menusearch #zpsearchform #zpsearchbutton {
+  top: -4px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1137 */
+#zpsearchform {
+  max-width: 510px;
+  position: relative;
+  min-height: 44px;
+  margin: 0 auto;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1143 */
+#zpsearchform input {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1146 */
+#zpsearchfield {
+  margin: 0;
+  padding: 6px 30px 6px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 44px;
+  font-size: 1em;
+  line-height: 28px;
+  color: #fafafa;
+  background-color: transparent;
+  border: 1px solid #fafafa;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1165 */
+#zpsearchbutton {
+  margin: 0;
+  padding: 6px 0;
+  border: 0;
+  box-sizing: border-box;
+  height: 44px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+/* Footer */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1182 */
+#afterfooter {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  color: #fafafa;
+  line-height: 1.5;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1188 */
+#afterfooter p {
+  margin: 0 0 0.5em 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1191 */
+#afterfooter a {
+  color: #fafafa;
+  border-bottom: dotted 1px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1197 */
+#afterfooter a:hover {
+  color: #05cbff;
+  border-bottom: dotted 1px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1205 */
+#afterfooter h1,
+#afterfooter h2,
+#afterfooter h3,
+#afterfooter h4,
+#afterfooter h5,
+#afterfooter h6 {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  color: #fafafa;
+  font-weight: lighter;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1213 */
+#footer {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  color: #fafafa;
+  text-align: center;
+  padding: 2em 3em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1221 */
+#xmenu {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1225 */
+#xmenu a {
+  margin-left: 10px;
+  margin-bottom: 0.5em;
+  color: #fafafa;
+  border-bottom: dotted 1px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1233 */
+#xmenu a:first-child {
+  margin-left: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1236 */
+#xmenu a:hover {
+  color: #05cbff;
+  border-bottom: dotted 1px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1244 */
+#xmenu + #copyright {
+  margin-top: 0.5em;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1249 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1250 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1251 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1252 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1253 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1254 */
+.ie #header #nav > ul li a.logo {
+  display: block;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1264 */
+.zp13sliderWidget .zp13slider-control-nav li a,
+.zpWeatherWidget a,
+.zpWeatherWidgetMD a {
+  border-bottom: 0 !important;
+}
+@media screen and (max-width: 1272px) {
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1277 */
+  #banner > .zpgrid > #grid,
+  #content > .zpgrid > #grid,
+  #afterfooter > .zpgrid > #grid,
+  div.zpRow {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1285 */
+  #content #breadcrumb {
+    padding-left: calc(3vw + 15px);
+    padding-right: calc(3vw + 15px);
+  }
+}
+/* Small */
+
+@media screen and (max-width: 736px) {
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1294 */
+  #slider .flex-caption h1,
+  #slider .flex-caption h2,
+  #slider .flex-caption h3 {
+    font-size: 2.1em;
+  }
+}
+/* Small */
+
+@media screen and (max-width: 640px) {
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1303 */
+  #slider #headerslider {
+    font-size: calc(0.5rem + 2.5vmin);
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1306 */
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1307 */
+  .objectfit #slider .flexslider {
+    aspect-ratio: auto;
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1310 */
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1313 */
+  .objectfit #slider .slides > li {
+    min-height: 100vw;
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1315 */
+  .objectfit #slider .slides > li img {
+    width: 100vw;
+    height: 100vw;
+    object-fit: cover;
+  }
+}
+/* XSmall */
+
+@media screen and (max-width: 480px) {
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1326 */
+  #footer {
+    padding-left: calc(3vw + 15px);
+    padding-right: calc(3vw + 15px);
+  }
+  /* Header */
+  
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1332 */
+  #header {
+    text-align: left;
+    border-radius: 0;
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1336 */
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1338 */
+  #header #nav:not(.on) li.overflownonly {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1344 */
+  #header #nav:not(.on) li:not(.overflownonly):not(.logo) {
+    display: none;
+  }
+}
+/* ZP 13 additions */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1354 */
+body:not(.withnews) .zpColumn .zpBreakout:not(.zpwBild.left):not(.zpwBild.right) {
+  width: calc(100vw - 9px);
+  margin-left: calc(-50vw + 50%);
+  box-sizing: border-box;
+  padding: 0;
+  overflow: hidden !important;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1362 */
+body.touch:not(.withnews) .zpColumn .zpBreakout:not(.zpwBild.left):not(.zpwBild.right) {
+  width: calc(100vw);
+}
+/* *** Layout-Specific adjustments for Inline-Editing *** */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1368 */
+#header #nav.fixed,
+#nav {
+  z-index: 6002;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1372 */
+div.zpieItem.zpieRow {
+  width: 1204px;
+  max-width: 100%;
+  left: 0px !important;
+  right: 0px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\layouts\Flat Responsive\assets\styles.less:L1379 */
+div.zpieItem.zpieRow .zpieHighlight {
+  max-width: 1200px;
+}
