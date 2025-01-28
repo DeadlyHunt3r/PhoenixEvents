@@ -1,0 +1,422 @@
+﻿/* BEGIN zpTABs Styles */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L6 */
+div.zpAccordion {
+  margin: 10px 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L9 */
+div.zpAccordion .accordion-heading {
+  position: relative;
+  padding: 10px;
+  padding-right: 30px;
+  background-color: #f5f5f5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f5f5f5));
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #f5f5f5);
+  background-image: -moz-linear-gradient(top, #f9f9f9, #f5f5f5);
+  background-image: -ms-linear-gradient(top, #f9f9f9, #f5f5f5);
+  background-image: -o-linear-gradient(top, #f9f9f9, #f5f5f5);
+  background-image: linear-gradient(to bottom, #f9f9f9, #f5f5f5);
+  color: #777777;
+  text-shadow: 1px 1px 0px #ffffff;
+  font-size: 14px;
+  text-transform: none;
+  font-family: inherit;
+  border: 1px solid #e7e7e7;
+  cursor: pointer;
+  margin: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L29 */
+div.zpAccordion .accordion-heading:after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 8px;
+  background-repeat: no-repeat;
+  background-image: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAjCAQAAACDHrTmAAABS0lEQVR4AezVQW3DMBTG8b8hhEIkIzCFUMggNBBmCC4EF8JCIRRCYIdSCIWdPmlR3yy39mHS9p3aRs77ye/VduBnAhFFyaxs2BnIRO5YmUjsRA7qk5i4sjo/kYCN+PAYIhs2ZeRgMTiBDPAUJxMAiM7r48r1TBHRpAAcvBkFtfbOUsEZSATVcl5f4cbt9Lqd5WdKoeA7c5ljU8B5FRBHr7IpWrwTajiaLCuqKwo4j35WkULPv7f0wqXA0VNNVoGiARGmbvtF2YgqKPjTnJF0pggjzgdDgWINtd3SDhgYyQw2Bag/AprbhLwmRZzZ2IHEztpzgNvT7a/dnm6HHu3pdx3Qnn4XJd0T2F9bI8yvyD/mr2I+Xx/gr2brQAAAAIBh0P2ld42iqM05cNKBkw6cdOCkAycdOOnASQdOOnDSgZMOnHTgpAMnHTjowAfUuC3yqCcvNAAAAABJRU5ErkJggg==);
+  background-position: 0px 0px;
+  width: 18px;
+  height: 12px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L42 */
+div.zpAccordion .accordion-content {
+  display: none;
+  border: 1px solid #e7e7e7;
+  border-top: 0;
+  padding: 20px 30px 20px 30px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L49 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L50 */
+div.zpAccordion.active .accordion-heading:after {
+  background-position: -20px 0px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L53 */
+div.zpAccordion.active .accordion-content {
+  display: block;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L60 */
+div.zpTABs * {
+  text-shadow: none !important;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L63 */
+div.zpTABs {
+  margin: 30px 0;
+  width: 100%;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L67 */
+div.zpTABs > ul.zpTABs {
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L75 */
+div.zpTABs > ul.zpTABs > li {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  background: #f7f7f7;
+  float: left;
+  border: 1px solid #e7e7e7;
+  border-right-width: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+  color: #777777;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L90 */
+div.zpTABs > ul.zpTABs > li a.zpTABs {
+  display: block !important;
+  padding: 15px 20px !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  text-shadow: none !important;
+  border: 0 !important;
+  /* overrides layout specific styles i.e. locus resp. */
+
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L99 */
+div.zpTABs > ul.zpTABs > li:before,
+div.zpTABs > ul.zpTABs > li:after {
+  display: none !important;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L104 */
+div.zpTABs > ul.zpTABs > li.active {
+  border-bottom-width: 0;
+  color: #5e5e5e;
+  background: #ffffff;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L109 */
+div.zpTABs > ul.zpTABs > li.active a.zpTABs {
+  cursor: default;
+  color: inherit;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L114 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L115 */
+div.zpTABs > ul.zpTABs > li.accordion.active a.zpTABs {
+  cursor: pointer;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L120 */
+div.zpTABs > ul.zpTABs > li.last {
+  border-right-width: 1px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L124 */
+div.zpTABs > ul.zpTABs > li.tab.active::after,
+div.zpTABs > ul.zpTABs > li.tab.active::before {
+  display: block !important;
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  height: 0px;
+  width: 999em;
+  border-bottom: 1px solid #e7e7e7;
+  pointer-events: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L135 */
+div.zpTABs > ul.zpTABs > li.tab.only.active::after,
+div.zpTABs > ul.zpTABs > li.tab-only.active::before {
+  bottom: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L139 */
+div.zpTABs > ul.zpTABs > li.tab.active::after {
+  left: 100%;
+  margin-left: 0px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L143 */
+div.zpTABs > ul.zpTABs > li.tab.active::before {
+  right: 100%;
+  margin-right: 0px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L148 */
+div.zpTABs > ul.zpTABs > li.acc {
+  display: none;
+  border-top-width: 0;
+  white-space: normal;
+  overflow: inherit;
+  padding: 15px 20px !important;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L159 */
+div.zpTABs > div {
+  padding: 30px;
+  clear: both;
+  display: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L164 */
+div.zpTABs > div.active {
+  margin-top: -1px;
+  display: block;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  border-top: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L175 */
+div.zpTABs > div.active > *:not(a) {
+  color: #777777;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L181 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L182 */
+div.zpTABs.small > ul.zpTABs {
+  float: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L185 */
+div.zpTABs.small > ul.zpTABs > li {
+  float: none;
+  border-width: 1px;
+  border-bottom-width: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L190 */
+div.zpTABs.small > ul.zpTABs > li a.zpTABs {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L196 */
+div.zpTABs.small > ul.zpTABs > li.tab {
+  -webkit-transition: background-color 300ms linear;
+  -o-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L200 */
+div.zpTABs.small > ul.zpTABs > li.tab.last:not(.active) {
+  border-bottom-width: 1px;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L204 */
+div.zpTABs.small > ul.zpTABs > li.active {
+  background: #f7f7f7;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L208 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L211 */
+div.zpTABs.small > ul.zpTABs > li.acc {
+  line-height: 0;
+  opacity: 0;
+  display: block;
+  -webkit-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L219 */
+div.zpTABs.small > ul.zpTABs > li.acc:last-child,
+div.zpTABs.small > ul.zpTABs > li.acc.last {
+  border-bottom-width: 1px;
+  border-top-width: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L225 */
+div.zpTABs.small > ul.zpTABs > li.acc:not(.active) {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  height: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L231 */
+div.zpTABs.small > ul.zpTABs > li.acc:not(.active) p {
+  margin: 0 !important;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L234 */
+div.zpTABs.small > ul.zpTABs > li.acc:not(.active) *:not(p) {
+  display: none;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  max-height: 0 !important;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L242 */
+div.zpTABs.small > ul.zpTABs > li.acc.active {
+  line-height: inherit;
+  opacity: 1;
+  border-top-width: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L250 */
+div.zpTABs.small > ul.zpTABs > li.noani {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L256 */
+div.zpTABs.small > div,
+div.zpTABs.small > div.active {
+  display: none !important;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L262 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L263 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L264 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L265 */
+div.zpTABs.accordion > ul.zpTABs > li.tab.last,
+div.zpTABs.accordion > ul.zpTABs > li.tab:last-child {
+  border-bottom-width: 0;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L270 */
+div.zpTABs.accordion > ul.zpTABs > li.accordion.active a.zpTABs {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+}
+/* make tables more responsive */
+
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L282 */
+div.zpTABs table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+@media only screen and (max-width: 319px) {
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L293 */
+  div.zpTABs > ul.zpTABs {
+    float: none;
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L296 */
+  div.zpTABs > ul.zpTABs > li {
+    float: none;
+    border-width: 1px;
+    border-bottom-width: 0;
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L301 */
+  div.zpTABs > ul.zpTABs > li.last {
+    border-bottom-width: 1px;
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L304 */
+  div.zpTABs > ul.zpTABs > li.active.last {
+    border-bottom-width: 0;
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L307 */
+  div.zpTABs > ul.zpTABs > li a.zpTABs {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L312 */
+  div.zpTABs > ul.zpTABs > li.active {
+    background: #f7f7f7;
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L315 */
+  div.zpTABs > ul.zpTABs > li.acc {
+    display: none;
+    white-space: normal;
+    overflow: inherit;
+    padding: 15px 20px !important;
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L321 */
+  div.zpTABs > ul.zpTABs > li.acc:last-child,
+  div.zpTABs > ul.zpTABs li.acc.last {
+    border-bottom-width: 1px;
+    border-top-width: 0;
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L326 */
+  div.zpTABs > ul.zpTABs > li.acc.active {
+    display: block;
+    border-top-width: 0;
+  }
+  /* Draw bottom line in Accordion-Display of first TAB in Widget with only one TAB */
+  
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L331 */
+  div.zpTABs > ul.zpTABs > li.last:first-child + li.acc {
+    border-bottom-width: 1px;
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L335 */
+  div.zpTABs > div,
+  div.zpTABs > div.active {
+    display: none !important;
+  }
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L343 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L344 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L345 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L346 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L347 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L348 */
+.zpreducemotion div.zpTABs.small > ul.zpTABs > li.tab,
+.zpreducemotion div.zpTABs.small > ul.zpTABs > li.acc {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L358 */
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L359 */
+.no-js div.zpTABs > ul.zpTABs > li,
+.no-js div.zpTABs > ul.zpTABs > li.acc,
+.no-js div.zpTABs > ul.zpTABs > li.acc.active,
+.no-js div.zpTABs > ul.zpTABs > li.tab {
+  display: block;
+  float: left;
+  clear: both;
+  border: 0;
+  background-color: transparent !important;
+  max-height: none !important;
+  padding: 0 20px !important;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L371 */
+.no-js div.zpTABs > ul.zpTABs > li.tab,
+.no-js div.zpTABs > ul.zpTABs > li.active {
+  padding-top: 20px !important;
+  padding-left: 0px !important;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L376 */
+.no-js div.zpTABs > ul.zpTABs > li.tab::after {
+  border: 0 !important;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L379 */
+.no-js div.zpTABs > ul.zpTABs > li a.zpTABs {
+  padding: 0 !important;
+}
+/* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L382 */
+.no-js div.zpTABs > div {
+  display: none !important;
+}
+/* Print Stylesheet */
+
+@media print {
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L389 */
+  div.zpTABs > ul.zpTABs > li,
+  div.zpTABs > ul.zpTABs > li.acc,
+  div.zpTABs > ul.zpTABs > li.tab {
+    display: block;
+    float: left;
+    clear: both;
+    border: 0;
+    background-color: transparent !important;
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L398 */
+  div.zpTABs > ul.zpTABs > li.tab::after {
+    border: 0 !important;
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L401 */
+  div.zpTABs > ul.zpTABs > li a.zpTABs {
+    padding: 0 !important;
+  }
+  /* C:\Users\Svenw\AppData\Local\Zeta Producer 16\packaging\widgets\zptabs\tabs.less:L404 */
+  div.zpTABs > div {
+    display: none !important;
+  }
+}
+/* END zpTABs Styles */
+
