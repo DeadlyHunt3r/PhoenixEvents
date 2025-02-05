@@ -81,7 +81,7 @@
 		WebFontConfig = {
 			custom: { 
 				families: [ 'Comfortaa:400,700', 'Roboto:300,400,700' ], 
-				urls: ['media/fonts/zp-webfonts.css?v=1514908179']
+				urls: ['media/fonts/zp-webfonts.css?v=1421900039']
 			}
 		};
 	</script>
@@ -223,6 +223,7 @@
 		
 
 
+
 	
 
 
@@ -270,7 +271,7 @@
 	
 			
 				
-				<div class="zpColumn even zpColumnWidth2 c4 last" style="" data-column-id="508" 
+				<div class="zpColumn even zpColumnWidth2 c5 last" style="" data-column-id="508" 
 					
 					 data-type="inline-editing" 
 					 data-context="column" 
@@ -279,7 +280,7 @@
 					 data-row-id="451" 
 					 data-item-id="508" 
 					 data-column-id="508" 
-					 data-undoclass="c4" 
+					 data-undoclass="c5" 
 					 data-undostyle="" 
 					 data-item-symlinktarget="false" 
 					 data-item-symlink="false" 
@@ -328,7 +329,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buchungsformular</title>
+  <title>Online Buchung</title>
   <style>
     body {
       font-family: comfortaa, sans-serif;
@@ -336,20 +337,20 @@
       padding: 0;
       height: 100vh;
       width: 100vw;
-      background-color: #333; /* Dunklerer Hintergrund */
-      color: #fff; /* Weißer Text */
+      background-color: #333;
+      color: #fff;
       position: relative;
     }
     h1 {
       text-align: center;
       margin-bottom: 20px;
-      color: #f1f1f1; /* Hellerer Titel */
+      color: #f1f1f1;
     }
     form {
       max-width: 400px;
       width: 100%;
       padding: 20px;
-      background-color: #444; /* Dunkleres Formular-Hintergrund */
+      background-color: #444;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       border-radius: 8px;
     }
@@ -357,26 +358,26 @@
       display: block;
       margin-bottom: 5px;
       font-weight: bold;
-      color: #f1f1f1; /* Helle Schriftfarbe für Labels */
+      color: #f1f1f1;
     }
     input, select, button {
       width: 100%;
       margin-bottom: 15px;
       padding: 10px;
       font-size: 16px;
-      border: 1px solid #666; /* Dunklerer Rand */
+      border: 1px solid #666;
       border-radius: 4px;
-      background-color: #555; /* Dunkelgrauer Hintergrund für Eingabefelder */
-      color: #fff; /* Weißer Text in den Eingabefeldern */
+      background-color: #555;
+      color: #fff;
     }
     button {
-      background-color: #4CAF50; /* Helle Schaltfläche */
+      background-color: #4CAF50;
       color: white;
       border: none;
       cursor: pointer;
     }
     button:hover {
-      background-color: #45a049; /* Etwas dunkler bei Hover */
+      background-color: #45a049;
     }
     .response-message {
       color: green;
@@ -422,14 +423,28 @@
     document.getElementById('booking-form').addEventListener('submit', async (e) => {
       e.preventDefault();
 
+      // Datum umwandeln in DD.MM.YYYY
+      const dateInput = document.getElementById('date').value;
+      if (dateInput) {
+        const dateParts = dateInput.split("-");
+        if (dateParts.length === 3) {
+          var formattedDate = `${dateParts[2]}.${dateParts[1]}.${dateParts[0]}`;
+        } else {
+          var formattedDate = dateInput;
+        }
+      }
+
+      // Uhrzeit bleibt im Format HH:MM
+      const timeInput = document.getElementById('time').value;
+
       const formData = {
         data: {
-          activity: document.getElementById('activity').value,
-          persons: document.getElementById('persons').value,
-          date: document.getElementById('date').value,
-          time: document.getElementById('time').value,
-          name: document.getElementById('name').value,
-          phone: document.getElementById('phone').value,
+          Aktivität: document.getElementById('activity').value,
+          Personen: document.getElementById('persons').value,
+          Datum: formattedDate,
+          Uhrzeit: timeInput,
+          Name: document.getElementById('name').value,
+          Telefonnummer: document.getElementById('phone').value,
         }
       };
 
@@ -517,6 +532,7 @@
 	
 	
 
+	
 	<script>	
 		function setoverflown(s){
 			var retcode = false;
