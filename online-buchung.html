@@ -115,9 +115,9 @@
     <input type="number" id="persons" name="persons" min="1" max="20" required>
     
     <label for="date">An welchem Datum?</label>
-    <input type="date" id="date" name="date" required>
+    <!-- Um Flatpickr zu nutzen, als Textfeld; Flatpickr erzwingt hier das Format -->
+    <input type="text" id="date" name="date" required placeholder="DD.MM.JJJJ">
     
-    <!-- Zeitfeld: Flatpickr sorgt hier für ein 24-Stunden-Format -->
     <label for="time">Um wie viel Uhr?</label>
     <input type="text" id="time" name="time" required placeholder="HH:MM">
     
@@ -148,12 +148,17 @@
   <!-- Flatpickr JS einbinden -->
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script>
-    // Initialisierung von Flatpickr für das Zeitfeld mit 24-Stunden-Format
+    // Initialisierung von Flatpickr für das Zeitfeld mit 24-Stunden-Format (HH:MM)
     flatpickr("#time", {
       enableTime: true,
       noCalendar: true,
       dateFormat: "H:i",    // Format HH:MM
       time_24hr: true
+    });
+    
+    // Initialisierung von Flatpickr für das Datum-Feld im Format DD.MM.JJJJ
+    flatpickr("#date", {
+      dateFormat: "d.m.Y"   // Format DD.MM.JJJJ
     });
     
     // Öffnet das modale Fenster, wenn das readonly Textfeld angeklickt wird
@@ -190,22 +195,15 @@
     document.getElementById('booking-form').addEventListener('submit', async (e) => {
       e.preventDefault();
     
-      // Datum ins Format DD.MM.YYYY umwandeln
-      const dateInput = document.getElementById('date').value;
-      let formattedDate = dateInput;
-      if (dateInput) {
-        const dateParts = dateInput.split("-");
-        if (dateParts.length === 3) {
-          formattedDate = `${dateParts[2]}.${dateParts[1]}.${dateParts[0]}`;
-        }
-      }
+      // Das Datum-Feld liefert bereits den Wert im Format DD.MM.JJJJ
+      const formattedDate = document.getElementById('date').value;
     
       // Das Zeitfeld liefert dank Flatpickr einen Wert im Format HH:MM (24-Stunden)
       const timeInput = document.getElementById('time').value;
     
       const formData = {
         data: {
-          Aktivität: activityInput.value,
+          Aktivität: document.getElementById('activity').value,
           Personen: document.getElementById('persons').value,
           Datum: formattedDate,
           Uhrzeit: timeInput,
