@@ -208,6 +208,40 @@
     .toggle-switch input:checked + .slider:before {
       transform: translateX(22px);
     }
+
+    /* Game Over Fenster (Modal) */
+    #game-over {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      display: none;
+      z-index: 1001;
+      text-align: center;
+    }
+    body.dark #game-over {
+      background-color: #444;
+      color: #eee;
+      border: 1px solid #666;
+    }
+    #game-over button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #8f7a66;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    #game-over button:hover {
+      background-color: #776e65;
+    }
   </style>
 </head>
 <body>
@@ -249,6 +283,12 @@
     <button id="restart">Neustart</button>
   </div>
 
+  <!-- Game Over Fenster (Modal) -->
+  <div id="game-over">
+    <p>Keine Bewegung mehr möglich! Spiel beendet.</p>
+    <button id="game-over-restart">Neustarten</button>
+  </div>
+
   <script>
     let size = 4;
     let board = [];
@@ -260,6 +300,8 @@
     const restartButton = document.getElementById('restart');
     const toggleSizeButton = document.getElementById('toggle-size');
     const statsElement = document.getElementById('stats');
+    const gameOverWindow = document.getElementById('game-over');
+    const gameOverRestart = document.getElementById('game-over-restart');
 
     // Elemente für Einstellungen
     const settingsBtn = document.getElementById('settings-btn');
@@ -303,6 +345,8 @@
       spawnTile();
       renderBoard();
       updateStats();
+      // Falls das Game-Over Fenster sichtbar war, wieder ausblenden
+      gameOverWindow.style.display = 'none';
     }
 
     function renderBoard() {
@@ -400,7 +444,7 @@
     }
 
     // Bei jeder Tasteneingabe (egal ob sich das Spielfeld ändert oder nicht)
-    // wird ein neuer Block gesetzt. Kann kein Block gesetzt werden, ist das Spiel vorbei.
+    // wird ein neuer Block gesetzt. Kann kein Block gesetzt werden, wird das Game-Over Fenster angezeigt.
     function move(direction) {
       if (isGameOver) return;
       moveCount++;
@@ -423,9 +467,14 @@
       updateStats();
       if (!spawned) {
         isGameOver = true;
-        setTimeout(() => alert("Keine Bewegung mehr möglich! Spiel beendet."), 200);
+        showGameOver();
       }
       console.log(`Bewegung: ${direction}`);
+    }
+
+    function showGameOver() {
+      // Zeige das Game-Over Fenster an
+      gameOverWindow.style.display = 'block';
     }
 
     function toggleBoardSize() {
@@ -435,6 +484,9 @@
 
     restartButton.addEventListener('click', initGame);
     toggleSizeButton.addEventListener('click', toggleBoardSize);
+
+    // Neustart über das Game-Over Fenster
+    gameOverRestart.addEventListener('click', initGame);
 
     // Tastatureingaben: Es wird geprüft, ob der gedrückte Key dem in den Einstellungen hinterlegten Wert entspricht oder eine Pfeiltaste ist.
     window.addEventListener('keydown', (event) => {
