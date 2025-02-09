@@ -100,9 +100,27 @@
       font-weight: bold;
       cursor: pointer;
     }
+    
+    /* Kleiner runder Button oben links im Apple-Stil (ohne Text) */
+    .index-button {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      width: 20px;
+      height: 20px;
+      background-color: #FF3B30; /* iOS-Rot */
+      border: none;
+      border-radius: 50%;
+      text-decoration: none;
+      z-index: 2000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
   </style>
 </head>
 <body>
+  <!-- Kleiner runder, roter Button oben links ohne Text, der zu index.html führt -->
+  <a href="index.html" class="index-button"></a>
+  
   <h1>Online Buchung</h1>
   
   <!-- Buchungsformular -->
@@ -136,7 +154,6 @@
       <span class="close">&times;</span>
       <ul>
         <li data-value="Tod im Schatten der Wahrheit">Tod im Schatten der Wahrheit</li>
-        <!-- Weitere Optionen können hier hinzugefügt werden -->
 
       </ul>
     </div>
@@ -200,7 +217,7 @@
     
       // Das Zeitfeld liefert dank Flatpickr einen Wert im Format HH:MM (24-Stunden)
       const timeInput = document.getElementById('time').value;
-      // Füge ein führendes Apostroph hinzu, um den Wert als Text zu übermitteln
+      // Füge ein führendes Apostroph hinzu, um den Zeitwert als Text zu übermitteln
       const timeString = "'" + timeInput;
     
       const formData = {
@@ -215,7 +232,7 @@
       };
     
       try {
-        const response = await fetch('https://sheetdb.io/api/v1/z05isuyc3h1lf?sheet=Online-Buchung', {
+        const response = await fetch('https://sheetdb.io/api/v1/z05isuyc3h1lf?sheet=Test', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
