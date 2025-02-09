@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Online Buchung</title>
+  <!-- Flatpickr CSS einbinden -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <style>
     /* Box-Sizing für alle Elemente */
     *, *::before, *::after {
@@ -106,7 +108,7 @@
   <!-- Buchungsformular -->
   <form id="booking-form">
     <label for="activity">Was möchtest du machen?</label>
-    <!-- Dieses Feld ist readonly, sodass nur über das Auswahlmenü ein Wert gesetzt werden kann -->
+    <!-- Dieses Feld ist readonly, sodass der Wert nur über das Auswahlmenü gesetzt werden kann -->
     <input type="text" id="activity" name="activity" placeholder="Klicke hier, um auszuwählen" readonly required>
     
     <label for="persons">Mit wie vielen Personen?</label>
@@ -115,9 +117,9 @@
     <label for="date">An welchem Datum?</label>
     <input type="date" id="date" name="date" required>
     
-    <!-- Zeitfeld: 24-Stunden-System, Format HH:MM -->
+    <!-- Zeitfeld: Flatpickr sorgt hier für ein 24-Stunden-Format -->
     <label for="time">Um wie viel Uhr?</label>
-    <input type="time" id="time" name="time" required step="60">
+    <input type="text" id="time" name="time" required placeholder="HH:MM">
     
     <label for="name">Vor- und Nachname:</label>
     <input type="text" id="name" name="name" required>
@@ -136,13 +138,24 @@
         <li data-value="Tod im Schatten der Wahrheit">Tod im Schatten der Wahrheit</li>
         <!-- Weitere Optionen können hier hinzugefügt werden -->
 
+      </ul>
     </div>
   </div>
   
   <p id="response-message" class="response-message"></p>
   <p id="error-message" class="error-message"></p>
   
+  <!-- Flatpickr JS einbinden -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script>
+    // Initialisierung von Flatpickr für das Zeitfeld mit 24-Stunden-Format
+    flatpickr("#time", {
+      enableTime: true,
+      noCalendar: true,
+      dateFormat: "H:i",    // Format HH:MM
+      time_24hr: true
+    });
+    
     // Öffnet das modale Fenster, wenn das readonly Textfeld angeklickt wird
     const activityInput = document.getElementById('activity');
     const activityModal = document.getElementById('activity-modal');
@@ -187,7 +200,7 @@
         }
       }
     
-      // Uhrzeit bleibt im Format HH:MM (24-Stunden, da type="time" verwendet wird)
+      // Das Zeitfeld liefert dank Flatpickr einen Wert im Format HH:MM (24-Stunden)
       const timeInput = document.getElementById('time').value;
     
       const formData = {
