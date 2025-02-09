@@ -115,7 +115,7 @@
     <input type="number" id="persons" name="persons" min="1" max="20" required>
     
     <label for="date">An welchem Datum?</label>
-    <!-- Um Flatpickr zu nutzen, als Textfeld; Flatpickr erzwingt hier das Format -->
+    <!-- Datum-Feld als Textfeld, damit Flatpickr das gewünschte Format erzwingen kann -->
     <input type="text" id="date" name="date" required placeholder="DD.MM.JJJJ">
     
     <label for="time">Um wie viel Uhr?</label>
@@ -200,13 +200,15 @@
     
       // Das Zeitfeld liefert dank Flatpickr einen Wert im Format HH:MM (24-Stunden)
       const timeInput = document.getElementById('time').value;
+      // Füge ein führendes Apostroph hinzu, um den Wert als Text zu übermitteln
+      const timeString = "'" + timeInput;
     
       const formData = {
         data: {
           Aktivität: document.getElementById('activity').value,
           Personen: document.getElementById('persons').value,
           Datum: formattedDate,
-          Uhrzeit: timeInput,
+          Uhrzeit: timeString,
           Name: document.getElementById('name').value,
           Telefonnummer: document.getElementById('phone').value,
         }
