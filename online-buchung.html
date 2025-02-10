@@ -106,8 +106,8 @@
       position: fixed;
       top: 10px;
       left: 10px;
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
       background-color: #FF3B30; /* iOS-Rot */
       border: none;
       border-radius: 50%;
@@ -115,11 +115,30 @@
       z-index: 2000;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
+    
+    /* Overlay "Bitte warten..." */
+    .loading-modal {
+      display: none; /* zunächst unsichtbar */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      line-height: 100vh; /* vertikale Zentrierung */
+      z-index: 3000;
+    }
   </style>
 </head>
 <body>
   <!-- Kleiner runder, roter Button oben links ohne Text, der zu index.html führt -->
   <a href="index.html" class="index-button"></a>
+  
+  <!-- Overlay "Bitte warten..." -->
+  <div id="loading-modal" class="loading-modal">Bitte warten...</div>
   
   <h1>Online Buchung</h1>
   
@@ -211,6 +230,9 @@
     // Formular-Absende-Handler
     document.getElementById('booking-form').addEventListener('submit', async (e) => {
       e.preventDefault();
+      
+      // "Bitte warten..."-Overlay anzeigen
+      document.getElementById('loading-modal').style.display = 'block';
     
       // Das Datum-Feld liefert bereits den Wert im Format DD.MM.JJJJ
       const formattedDate = document.getElementById('date').value;
@@ -250,6 +272,9 @@
       } catch (error) {
         document.getElementById('error-message').textContent = 'Fehler: ' + error.message;
         document.getElementById('response-message').textContent = '';
+      } finally {
+        // Overlay wieder ausblenden
+        document.getElementById('loading-modal').style.display = 'none';
       }
     });
   </script>
