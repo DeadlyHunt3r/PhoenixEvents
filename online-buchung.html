@@ -173,7 +173,7 @@
       <span class="close">&times;</span>
       <ul>
         <li data-value="Tod im Schatten der Wahrheit">Tod im Schatten der Wahrheit</li>
-
+        <li data-value="Formel 1 Fahren (Max 10 Personen)">Formel 1 Fahren (Max 10 Personen)</li>
       </ul>
     </div>
   </div>
@@ -193,7 +193,7 @@
     });
     
     // Initialisierung von Flatpickr für das Datum-Feld im Format DD.MM.JJJJ
-    flatpickr("#date", {
+    const datePicker = flatpickr("#date", {
       dateFormat: "d.m.Y"   // Format DD.MM.JJJJ
     });
     
@@ -215,7 +215,22 @@
     // Beim Klick auf eine Option wird der Wert ins readonly-Feld übernommen und das Modal geschlossen
     options.forEach(function(option) {
       option.addEventListener('click', function() {
-        activityInput.value = this.getAttribute('data-value');
+        const selectedActivity = this.getAttribute('data-value');
+        activityInput.value = selectedActivity;
+        
+        // Falls "Formel 1 Fahren" ausgewählt wurde, nur Dienstag (2), Donnerstag (4) und Samstag (6) erlauben
+        if (selectedActivity.includes("Formel 1 Fahren")) {
+          datePicker.set("disable", [
+            function(date) {
+              // date.getDay(): 0 = Sonntag, 1 = Montag, 2 = Dienstag, 3 = Mittwoch, 4 = Donnerstag, 5 = Freitag, 6 = Samstag
+              return !(date.getDay() === 2 || date.getDay() === 4 || date.getDay() === 6);
+            }
+          ]);
+        } else {
+          // Bei anderen Aktivitäten alle Tage freischalten
+          datePicker.set("disable", []);
+        }
+        
         activityModal.style.display = 'none';
       });
     });
