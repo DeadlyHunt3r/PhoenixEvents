@@ -269,13 +269,14 @@
       };
     
       try {
-        const response = await fetch('https://sheetdb.io/api/v1/z05isuyc3h1lf?sheet=Online-Buchung', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData),
-        });
+        const response = await fetch('https://script.google.com/macros/s/AKfycbxpl1i0WUeqOIXTaJJsLj-hB8cO3fYqudt3ZyxCCAEPzX1ly3uu7w61vT-rjmjdd9rvvQ/exec', {
+  method: 'POST',
+  headers: {
+    // Nutze einen Content-Type, der keine Preflight-Anfrage auslöst, z. B.:
+    'Content-Type': 'text/plain;charset=UTF-8'
+  },
+  body: JSON.stringify(formData)
+});
     
         if (response.ok) {
           document.getElementById('response-message').textContent = 'Deine Buchung wurde erfolgreich gesendet!';

@@ -92,8 +92,6 @@
     .cell-65536  { background-color: #e24414; color: #f9f6f2; }
     
     /* Dark Mode: Angepasste Farben für die einzelnen Kacheln */
-    /* Für die 2er und 4er Kacheln wird hier bewusst der helle Farbton beibehalten,
-       damit sie auch im Dark Mode gut erkennbar sind. */
     body.dark .cell-2   { background-color: #eee4da; }
     body.dark .cell-4   { background-color: #ece0c8; }
     body.dark .cell-8   { background-color: #d29963; }
@@ -432,7 +430,12 @@
       for (let i = 0; i < filteredRow.length - 1; i++) {
         if (filteredRow[i] === filteredRow[i + 1]) {
           filteredRow[i] *= 2;
-          score += filteredRow[i];
+          // Prüfe, ob es ein großes Spielfeld ist
+          if (size === 6) {
+            score += Math.floor(filteredRow[i] / 3);
+          } else {
+            score += filteredRow[i];
+          }
           filteredRow[i + 1] = 0;
           i++;
         }
