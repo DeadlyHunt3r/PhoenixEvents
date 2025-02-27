@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formula Racing Ranking</title>
+  <style>
+    /* Styling für den kleinen roten Punkt */
+    .nav-dot {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 15px;
+      height: 15px;
+      background-color: red;
+      border-radius: 50%;
+      text-decoration: none;
+      z-index: 1000;
+    }
+
+    /* Einfaches Styling – passe es nach Bedarf an */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #1e1e1e;
+      color: white;
+    }
+    .container {
+      max-width: 1500px;
+      margin: 0 auto;
+      background: #2c2c2c;
+      padding: 20px;
+      border-radius: 8px;
+      position: relative;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .track {
+      margin-bottom: 40px;
+    }
+    .track img {
+      display: block;
+      margin: 0 auto 10px;
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #2c2c2c;
+      border-radius: 4px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      background: #1e1e1e;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 4px;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      align-items: center;
+      gap: 10px;
+    }
+    .racer-info,
+    .racer-time,
+    .racer-weather,
+    .racer-date {
+      text-align: left;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <!-- Kleiner roter Punkt oben links als Navigationslink -->
+  <a href="index.html" class="nav-dot"></a>
+
+  <div class="container">
+    <h1>Formula Racing Ranking</h1>
+
+    <div id="track-86" class="track">
+      <h2>Strecke 1: <span id="track-86-name"></span></h2>
+      <img id="track-86-image" src="" alt="Streckenbild">
+      <ul id="track-86-ranking"></ul>
+    </div>
+
+    <div id="track-88" class="track">
+      <h2>Strecke 2: <span id="track-88-name"></span></h2>
+      <img id="track-88-image" src="" alt="Streckenbild">
+      <ul id="track-88-ranking"></ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Formula Racing Ranking</p>
+  </footer>
+
+  <script>
+    const config = {
+      tracks: {
+        "86": {
+          name: "",
+          image: "1.jpg"
+        },
+        "88": {
+          name: "",
+          image: "2.jpg"
+        }
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const track86Url = 'https://api.bitdevil2k16.net/demo/racerOverview/trackinfo/86';
+      const track88Url = 'https://api.bitdevil2k16.net/demo/racerOverview/trackinfo/88';
+
+      fetchTrackData(track86Url, 'track-86', config);
+      fetchTrackData(track88Url, 'track-88', config);
+    });
+
+    function fetchTrackData(url, trackId, config) {
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          displayTrackData(data, trackId, config);
+        })
+        .catch(error => {
+          console.error('Error fetching track data:', error);
+        });
+    }
+
+    function displayTrackData(data, trackId, config) {
+      const trackConfig = config.tracks[trackId.replace('track-', '')];
+      const trackNameElement = document.getElementById(`${trackId}-name`);
+      const trackImageElement = document.getElementById(`${trackId}-image`);
+      const rankingElement = document.getElementById(`${trackId}-ranking`);
+
+      trackNameElement.textContent = trackConfig.name || data.trackName;
+      trackImageElement.src = trackConfig.image || data.image;
+
+      function timeToSeconds(time) {
+        const [minutes, seconds] = time.split(':').map(parseFloat);
+        return minutes * 60 + seconds;
+      }
+
+      function formatDate(dateStr) {
+        const dateObj = new Date(dateStr);
+        const day = ("0" + dateObj.getDate()).slice(-2);
+        const month = ("0" + (dateObj.getMonth() + 1)).slice(-2);
+        const year = dateObj.getFullYear();
+        const hours = ("0" + dateObj.getHours()).slice(-2);
+        const minutes = ("0" + dateObj.getMinutes()).slice(-2);
+        return `${day}.${month}.${year}-${hours}:${minutes}`;
+      }
+
+      let firstPlaceTimeInSeconds = null;
+      data.overall.forEach((racer, index) => {
+        const currentTimeInSeconds = timeToSeconds(racer.time);
+        let timeDifference = '';
+
+        if (index === 0) {
+          firstPlaceTimeInSeconds = currentTimeInSeconds;
+        } else {
+          const differenceInSeconds = currentTimeInSeconds - firstPlaceTimeInSeconds;
+          const minutes = Math.floor(differenceInSeconds / 60);
+          const seconds = (differenceInSeconds % 60).toFixed(3);
+          const differenceFormatted = `${minutes}:${seconds.padStart(6, '0')}`;
+          timeDifference = `<span style="color: red;">+${differenceFormatted}</span>`;
+        }
+
+        const listItem = document.createElement('li');
+        listItem.innerHTML = 
+          `<div class="racer-info">${racer.placing}. ${racer.name} - ${racer.car}</div>
+          <div class="racer-time">${racer.time}${timeDifference}</div>
+          <div class="racer-weather">Wetter: ${racer.weathertrans}</div>
+          <div class="racer-date">Datum: ${formatDate(racer.date)}</div>`;
+        rankingElement.appendChild(listItem);
+      });
+    }
+  </script>
+</body>
+</html>
