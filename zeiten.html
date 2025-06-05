@@ -38,7 +38,6 @@
     </details>
 
 
-
   <footer>
     <p>© 2025 San Andreas Racing Authority</p>
   </footer>
@@ -51,6 +50,12 @@
       { name: 'Lukas Fahrer', team: 'Team A', points: 15 },
       { name: 'Sara Sprint', team: 'Team C', points: 100 }
     ];
+
+    // "Teamnamen"
+    const carToTeamName = {
+      'Openwheel1': 'Benefactor BR8',
+      // … weitere Fahrzeuge
+    };
 
     document.addEventListener('DOMContentLoaded', () => {
       fetchTrackData('https://api.bitdevil2k16.net/demo/racerOverview/trackinfo/86', 'track-86');
@@ -69,46 +74,63 @@
     function displayTrackData(data, trackId) {
       const list = document.getElementById(`${trackId}-ranking`);
       let first = null;
+
       data.overall.forEach((r, i) => {
         const secs = timeToSeconds(r.time);
         const diff = i === 0 ? 0 : secs - first;
-        if(i===0) first = secs;
-        const icon = (trackId==='track-88' && i===0) ? '<span class="icon-stopwatch">⏱️</span>' :
-                     (trackId==='track-86' && i===0) ? '<span class="trophy">🥇</span>' :
-                     (trackId==='track-86' && i===1) ? '<span class="trophy">🥈</span>' :
-                     (trackId==='track-86' && i===2) ? '<span class="trophy">🥉</span>' : '';
+        if (i === 0) first = secs;
+
+        // 2) Statt r.car auf carToTeamName[r.car] zurück und zurück auf r.car, falls kein Mapping vorliegt
+        const displayedName = carToTeamName[r.car] || r.car;
+
+        const icon = (trackId === 'track-88' && i === 0) ? '<span class="icon-stopwatch">⏱️</span>' :
+                     (trackId === 'track-86' && i === 0) ? '<span class="trophy">🥇</span>' :
+                     (trackId === 'track-86' && i === 1) ? '<span class="trophy">🥈</span>' :
+                     (trackId === 'track-86' && i === 2) ? '<span class="trophy">🥉</span>' : '';
+
         const li = document.createElement('li');
-        li.innerHTML = `<div class="racer-info">${r.placing}. ${r.name} - ${r.car}${icon}</div>
-                        <div class="racer-time">${r.time}${diff>0 ? `<span style='color:red;'>+${formatDiff(diff)}</span>` : ''}</div>
-                        <div class="racer-weather">Wetter: ${r.weathertrans}</div>
-                        <div class="racer-date">Datum: ${formatDate(r.date)}</div>`;
+        li.innerHTML = `
+          <div class="racer-info">${r.placing}. ${r.name} – ${displayedName}${icon}</div>
+          <div class="racer-time">${r.time}${diff > 0 ? `<span style="color:red;">+${formatDiff(diff)}</span>` : ''}</div>
+          <div class="racer-weather">Wetter: ${r.weathertrans}</div>
+          <div class="racer-date">Datum: ${formatDate(r.date)}</div>
+        `;
         list.appendChild(li);
       });
     }
 
-    function timeToSeconds(t) { const [m,s]=t.split(':').map(parseFloat); return m*60+s; }
-    function formatDiff(d){ const m=Math.floor(d/60), s=(d%60).toFixed(3); return `${m}:${s.padStart(6,'0')}`; }
-    function formatDate(ds){ const d=new Date(ds); return `${String(d.getDate()).padStart(2,'0')}.${String(d.getMonth()+1).padStart(2,'0')}.${d.getFullYear()} - ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`; }
+    function timeToSeconds(t) {
+      const [m, s] = t.split(':').map(parseFloat);
+      return m * 60 + s;
+    }
+    function formatDiff(d) {
+      const m = Math.floor(d / 60), s = (d % 60).toFixed(3);
+      return `${m}:${s.padStart(6, '0')}`;
+    }
+    function formatDate(ds) {
+      const d = new Date(ds);
+      return `${String(d.getDate()).padStart(2, '0')}.${String(d.getMonth() + 1).padStart(2, '0')}.${d.getFullYear()} – ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
+    }
 
-    function populateDriverChampionship(){
+    function populateDriverChampionship() {
       const tbody = document.querySelector('#driver-championship tbody');
-      const sorted = [...driverPoints].sort((a,b)=>b.points-a.points);
-      sorted.forEach((d,i)=>{
-        const tr=document.createElement('tr');
-        tr.innerHTML = `<td>${i+1}</td><td>${d.name}</td><td>${d.team}</td><td>${d.points}</td>`;
+      const sorted = [...driverPoints].sort((a, b) => b.points - a.points);
+      sorted.forEach((d, i) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${i + 1}</td><td>${d.name}</td><td>${d.team}</td><td>${d.points}</td>`;
         tbody.appendChild(tr);
       });
     }
 
-    function populateTeamChampionship(){
+    function populateTeamChampionship() {
       const map = {};
-      driverPoints.forEach(d=> map[d.team]=(map[d.team]||0)+d.points);
-      const teams = Object.entries(map).map(([team,pts])=>({team,pts}));
-      teams.sort((a,b)=>b.pts-a.pts);
+      driverPoints.forEach(d => map[d.team] = (map[d.team] || 0) + d.points);
+      const teams = Object.entries(map).map(([team, pts]) => ({ team, pts }));
+      teams.sort((a, b) => b.pts - a.pts);
       const tbody = document.querySelector('#team-championship tbody');
-      teams.forEach((t,i)=>{
-        const tr=document.createElement('tr');
-        tr.innerHTML=`<td>${i+1}</td><td>${t.team}</td><td>${t.pts}</td>`;
+      teams.forEach((t, i) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${i + 1}</td><td>${t.team}</td><td>${t.pts}</td>`;
         tbody.appendChild(tr);
       });
     }
